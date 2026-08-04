@@ -1,25 +1,100 @@
-/* =====================
-        BUTTONS
-===================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
-.buttons{
-    margin-top:35px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    flex-wrap:wrap;
+
+* {
+    box-sizing:border-box;
 }
 
-.main-button,
-.discord-button,
-.youtube-button{
 
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
+body {
+
+    margin:0;
+
+    background:
+    radial-gradient(circle at top,#222,#050505 70%);
+
+    color:white;
+
+    font-family:'Montserrat',Arial,sans-serif;
+
+}
+
+
+
+
+/* =====================
+        HEADER
+===================== */
+
+
+.hero {
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+
+.logo {
+
+    width:170px;
+
+    filter:drop-shadow(0 0 20px white);
+
+}
+
+
+
+.hero h1 {
+
+    font-size:48px;
+
+    font-weight:800;
+
+    letter-spacing:3px;
+
+    margin:20px 0 10px;
+
+}
+
+
+
+.hero p {
+
+    color:#aaa;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* =====================
+        BUTTON
+===================== */
+
+
+.buttons {
+
+    margin-top:35px;
+
+}
+
+
+
+.main-button {
+
+    display:inline-block;
 
     padding:15px 35px;
+
+    background:
+    linear-gradient(145deg,#facc15,#eab308);
+
+    color:black;
 
     text-decoration:none;
 
@@ -31,91 +106,721 @@
 
     transition:.3s;
 
-}
-
-/* Pavouk */
-.main-button{
-
-    background:
-    linear-gradient(145deg,#facc15,#eab308);
-
-    color:black;
-
     box-shadow:
+
     0 10px 30px rgba(250,204,21,.3);
 
 }
 
-.main-button:hover{
+
+
+.main-button:hover {
 
     transform:translateY(-5px);
 
     box-shadow:
+
     0 15px 40px rgba(250,204,21,.5);
 
 }
 
-/* Discord */
-.discord-button{
+
+
+
+
+/* =====================
+        TOP 3
+===================== */
+
+
+.top-section {
+
+    text-align:center;
+
+    margin:50px auto;
+
+}
+
+
+.top-section h2 {
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.leaderboard-top {
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    justify-content:center !important;
+
+    align-items:flex-end !important;
+
+    gap:25px;
+
+    width:100%;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.top-place {
+
+    flex:0 0 230px;
 
     background:
-    linear-gradient(145deg,#5865F2,#4752C4);
+    linear-gradient(145deg,#151515,#080808);
 
-    color:white;
+    border:1px solid #333;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
 
     box-shadow:
-    0 10px 30px rgba(88,101,242,.35);
+    0 15px 40px rgba(0,0,0,.7);
+
+    transition:.3s;
 
 }
 
-.discord-button:hover{
 
-    transform:translateY(-5px);
 
-    box-shadow:
-    0 15px 40px rgba(88,101,242,.55);
+.top-place:hover {
 
-}
+    transform:translateY(-10px);
 
-/* YouTube */
-.youtube-button{
-
-    background:
-    linear-gradient(145deg,#ff3b30,#cc0000);
-
-    color:white;
-
-    box-shadow:
-    0 10px 30px rgba(255,0,0,.35);
+    border-color:white;
 
 }
 
-.youtube-button:hover{
 
-    transform:translateY(-5px);
 
-    box-shadow:
-    0 15px 40px rgba(255,0,0,.55);
+.top-place img {
+
+    height:150px;
 
 }
 
-@media(max-width:700px){
-.buttons{flex-direction:column;gap:12px;}
-.main-button,.discord-button,.youtube-button{width:260px;}
 
-.buttons{
+
+.top-place h3 {
+
+    font-size:22px;
+
+    margin:15px 0;
+
+}
+
+
+
+.place {
+
+    font-size:40px;
+
+}
+
+
+
+.first {
+
+    order:2;
+
+    transform:translateY(-30px);
+
+    border-color:#facc15;
+
+}
+
+
+
+.first img {
+
+    height:200px;
+
+}
+
+
+
+.second {
+
+    order:1;
+
+}
+
+
+
+.third {
+
+    order:3;
+
+}
+
+
+
+
+
+/* =====================
+        PLAYERS
+===================== */
+
+
+.players-section {
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+.players-section h2 {
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+#players {
+
+    width:100%;
+
+    max-width:800px;
+
+    margin:auto;
+
+    display:flex;
 
     flex-direction:column;
 
-    gap:12px;
+    gap:15px;
 
 }
 
-.main-button,
-.discord-button,
-.youtube-button{
+
+
+
+
+.player-card {
+
+    width:100%;
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:
+    linear-gradient(145deg,#151515,#080808);
+
+    border:1px solid #333;
+
+    border-radius:15px;
+
+    padding:15px 25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.5);
+
+    transition:.3s;
+
+}
+
+
+
+.player-card:hover {
+
+    transform:translateY(-5px);
+
+    border-color:white;
+
+}
+
+
+
+
+
+.player-number {
+
+    width:50px;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#888;
+
+    text-align:center;
+
+}
+
+
+
+
+
+.player-card img {
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:8px;
+
+}
+
+
+
+
+
+.player-card h3 {
+
+    flex:1;
+
+    margin:0;
+
+    font-size:20px;
+
+    text-align:left;
+
+}
+
+
+
+
+
+/* =====================
+        RANKY
+===================== */
+
+
+.rank {
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+}
+
+
+
+.LT1 {
+
+    background:#facc15;
+
+    color:black;
+
+}
+
+
+
+.HT2 {
+
+    background:#9333ea;
+
+    color:white;
+
+}
+
+
+
+.LT2 {
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+.HT3 {
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+
+
+.LT3 {
+
+    background:#555;
+
+    color:white;
+
+}
+
+
+
+
+
+/* =====================
+        BRACKET
+===================== */
+
+
+.bracket-section {
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+.bracket-section h2 {
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.bracket {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.round {
 
     width:260px;
+
+}
+
+
+
+.round h3 {
+
+    margin-bottom:25px;
+
+}
+
+
+
+.match {
+
+    background:
+
+    linear-gradient(145deg,#151515,#080808);
+
+    border:1px solid #333;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.5);
+
+}
+
+
+
+.match span {
+
+    display:block;
+
+    padding:5px;
+
+}
+
+
+
+.match b {
+
+    color:#facc15;
+
+}
+
+
+
+.empty {
+
+    color:#aaa;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* =====================
+        MOBILE
+===================== */
+
+
+@media(max-width:700px){
+
+
+.hero h1 {
+
+    font-size:32px;
+
+}
+
+
+
+.leaderboard-top {
+
+    flex-direction:column !important;
+
+    align-items:center !important;
+
+}
+
+
+
+.first {
+
+    transform:none;
+
+}
+
+
+
+.player-card {
+
+    padding:12px;
+
+}
+
+
+
+.player-number {
+
+    width:35px;
+
+    font-size:18px;
+
+}
+
+
+
+.player-card img {
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+.bracket {
+
+    flex-direction:column;
+
+}
+
+
+.round {
+
+    width:90%;
+
+}
+
+
+}
+/* ==========================
+        ESPORT BRACKET
+========================== */
+
+
+.bracket-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    padding:50px;
+
+    overflow-x:auto;
+
+}
+
+
+
+.stage {
+
+    width:220px;
+
+}
+
+
+.stage h3 {
+
+    text-align:center;
+
+    color:#aaa;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+.match {
+
+    background:#2b2622;
+
+    border:1px solid #4a4038;
+
+    border-left:3px solid #ff4538;
+
+    height:62px;
+
+    margin-bottom:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:0 15px;
+
+    position:relative;
+
+}
+
+
+
+.match span {
+
+    font-size:13px;
+
+    padding:5px 0;
+
+}
+
+
+
+.match span:first-child {
+
+    border-bottom:1px solid #444;
+
+}
+
+
+
+.match.big {
+
+    margin-top:120px;
+
+}
+
+
+
+
+.champion {
+
+    margin-top:80px;
+
+    background:#eabf28;
+
+    color:black;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-weight:800;
+
+    border:3px solid white;
+
+}
+
+
+
+/* propojení */
+
+.stage:not(:last-child) .match:after {
+
+    content:"";
+
+    position:absolute;
+
+    right:-40px;
+
+    top:50%;
+
+    width:40px;
+
+    border-top:2px dotted #ff4538;
+
+}
+
+
+
+.stage:not(:first-child) .match {
+
+    margin-top:80px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.bracket-container{
+
+    justify-content:flex-start;
 
 }
 
