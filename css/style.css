@@ -1,231 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
 
-*{
-box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
 
+body {
 
-body{
+    margin: 0;
 
-margin:0;
+    background:
+    radial-gradient(circle at top, #222, #050505 70%);
 
-background:
-radial-gradient(circle at top,#222,#050505 70%);
+    color: white;
 
-color:white;
-
-font-family:'Montserrat',sans-serif;
-
-}
-
-
-
-
-.hero{
-
-text-align:center;
-
-padding:50px;
+    font-family: 'Montserrat', Arial, sans-serif;
 
 }
 
 
 
-.logo{
+/* HEADER */
 
-width:170px;
+.hero {
 
-filter:drop-shadow(0 0 20px white);
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+.logo {
+
+    width: 170px;
+
+    filter: drop-shadow(0 0 20px white);
+
+}
+
+
+.hero h1 {
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin: 20px 0 10px;
+
+}
+
+
+.hero p {
+
+    color: #aaa;
+
+    font-size: 20px;
 
 }
 
 
 
-.hero h1{
-
-font-size:48px;
-
-letter-spacing:3px;
-
-}
 
 
+/* =====================
+        TOP 3
+===================== */
 
-.hero p{
 
-color:#aaa;
+.top-section {
 
-font-size:20px;
+    text-align: center;
+
+    margin: 50px auto;
 
 }
-
-
-
-
-
-
-/* TOP 3 */
-
-
-.top-section{
-
-text-align:center;
-
-margin:50px 0;
-
-}
-
 
 
 .top-section h2,
-.players-section h2{
+.players-section h2 {
 
-font-size:32px;
+    font-size: 32px;
 
-}
-
-
-
-.top3{
-
-display:flex;
-
-justify-content:center;
-
-gap:35px;
-
-flex-wrap:wrap;
+    margin-bottom: 35px;
 
 }
 
 
 
+.top3 {
 
-.top-player{
+    display: flex;
 
-width:230px;
+    justify-content: center;
 
-background:#090909;
+    align-items: center;
 
-border:1px solid #333;
+    gap: 35px;
 
-border-radius:18px;
-
-padding:25px;
-
-transition:.3s;
-
-box-shadow:0 10px 30px black;
+    flex-wrap: wrap;
 
 }
 
 
 
-.top-player:hover{
+.top-player {
 
-transform:translateY(-8px);
+    width: 230px;
 
-border-color:white;
-
-}
-
+    background:
+    linear-gradient(145deg,#151515,#080808);
 
 
-.top-player img{
+    border: 1px solid #333;
 
-height:160px;
+    border-radius: 18px;
 
-}
+    padding: 25px;
 
+    transition: .3s;
 
-
-.top-player h3{
-
-margin:15px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.7);
 
 }
 
 
 
+.top-player:hover {
 
+    transform: translateY(-8px);
 
-
-/* PLAYERS */
-
-
-.players-section{
-
-text-align:center;
-
-padding:40px;
+    border-color: white;
 
 }
 
 
 
-#players{
+.top-player img {
 
-max-width:1200px;
-
-margin:auto;
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
+    height: 160px;
 
 }
 
 
 
-.player-card{
+.top-player h3 {
 
-background:#090909;
-
-border:1px solid #333;
-
-border-radius:15px;
-
-padding:20px;
-
-display:flex;
-
-align-items:center;
-
-gap:20px;
-
-transition:.3s;
-
-}
-
-
-
-.player-card:hover{
-
-transform:scale(1.05);
-
-border-color:white;
-
-}
-
-
-
-.player-card img{
-
-height:80px;
-
-}
-
-
-
-
-.player-card h3{
-
-margin:0 0 10px;
+    margin: 15px 0;
 
 }
 
@@ -233,375 +158,209 @@ margin:0 0 10px;
 
 
 
+/* =====================
+       HRÁČI
+===================== */
 
 
-/* RANKY */
+.players-section {
 
+    text-align: center;
 
-.rank{
-
-padding:6px 14px;
-
-border-radius:8px;
-
-font-weight:800;
-
-font-size:13px;
+    padding: 40px 20px;
 
 }
 
 
 
-.LT1{
+#players {
 
-background:#facc15;
+    max-width: 1200px;
 
-color:black;
+    margin: auto;
 
-}
+    display: grid;
 
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
 
-.HT2{
-
-background:#9333ea;
-
-}
-
-
-.LT2{
-
-background:#2563eb;
-
-}
-
-
-.HT3{
-
-background:#22c55e;
-
-}
-
-
-.LT3{
-
-background:#555;
+    gap: 20px;
 
 }
 
 
 
 
+.player-card {
+
+    background:
+    linear-gradient(145deg,#151515,#080808);
+
+
+    border: 1px solid #333;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+
+    transition: .3s;
+
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.5);
+
+}
+
+
+
+.player-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color:white;
+
+}
+
+
+
+.player-card img {
+
+    width:80px;
+
+    height:80px;
+
+}
+
+
+
+.player-card h3 {
+
+    margin:0 0 10px;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+/* =====================
+        RANKY
+===================== */
+
+
+.rank {
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+}
+
+
+
+
+
+/* LT1 - nejlepší */
+
+.LT1 {
+
+    background:#facc15;
+
+    color:black;
+
+}
+
+
+/* HT2 */
+
+.HT2 {
+
+    background:#9333ea;
+
+    color:white;
+
+}
+
+
+
+/* LT2 */
+
+.LT2 {
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+/* HT3 */
+
+.HT3 {
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+
+
+/* LT3 */
+
+.LT3 {
+
+    background:#555;
+
+    color:white;
+
+}
+
+
+
+
+
+/* MOBILE */
 
 
 @media(max-width:700px){
 
-.hero h1{
 
-font-size:30px;
+    .hero h1 {
 
-}
+        font-size:32px;
 
-}@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+    }
 
 
-*{
-box-sizing:border-box;
-}
+    .top-player {
 
+        width:210px;
 
+    }
 
-body{
 
-margin:0;
+    .player-card {
 
-background:
-radial-gradient(circle at top,#222,#050505 70%);
+        width:100%;
 
-color:white;
-
-font-family:'Montserrat',sans-serif;
-
-}
-
-
-
-
-.hero{
-
-text-align:center;
-
-padding:50px;
-
-}
-
-
-
-.logo{
-
-width:170px;
-
-filter:drop-shadow(0 0 20px white);
-
-}
-
-
-
-.hero h1{
-
-font-size:48px;
-
-letter-spacing:3px;
-
-}
-
-
-
-.hero p{
-
-color:#aaa;
-
-font-size:20px;
-
-}
-
-
-
-
-
-
-/* TOP 3 */
-
-
-.top-section{
-
-text-align:center;
-
-margin:50px 0;
-
-}
-
-
-
-.top-section h2,
-.players-section h2{
-
-font-size:32px;
-
-}
-
-
-
-.top3{
-
-display:flex;
-
-justify-content:center;
-
-gap:35px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-
-.top-player{
-
-width:230px;
-
-background:#090909;
-
-border:1px solid #333;
-
-border-radius:18px;
-
-padding:25px;
-
-transition:.3s;
-
-box-shadow:0 10px 30px black;
-
-}
-
-
-
-.top-player:hover{
-
-transform:translateY(-8px);
-
-border-color:white;
-
-}
-
-
-
-.top-player img{
-
-height:160px;
-
-}
-
-
-
-.top-player h3{
-
-margin:15px;
-
-}
-
-
-
-
-
-
-/* PLAYERS */
-
-
-.players-section{
-
-text-align:center;
-
-padding:40px;
-
-}
-
-
-
-#players{
-
-max-width:1200px;
-
-margin:auto;
-
-display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
-}
-
-
-
-.player-card{
-
-background:#090909;
-
-border:1px solid #333;
-
-border-radius:15px;
-
-padding:20px;
-
-display:flex;
-
-align-items:center;
-
-gap:20px;
-
-transition:.3s;
-
-}
-
-
-
-.player-card:hover{
-
-transform:scale(1.05);
-
-border-color:white;
-
-}
-
-
-
-.player-card img{
-
-height:80px;
-
-}
-
-
-
-
-.player-card h3{
-
-margin:0 0 10px;
-
-}
-
-
-
-
-
-
-
-/* RANKY */
-
-
-.rank{
-
-padding:6px 14px;
-
-border-radius:8px;
-
-font-weight:800;
-
-font-size:13px;
-
-}
-
-
-
-.LT1{
-
-background:#facc15;
-
-color:black;
-
-}
-
-
-.HT2{
-
-background:#9333ea;
-
-}
-
-
-.LT2{
-
-background:#2563eb;
-
-}
-
-
-.HT3{
-
-background:#22c55e;
-
-}
-
-
-.LT3{
-
-background:#555;
-
-}
-
-
-
-
-
-
-@media(max-width:700px){
-
-.hero h1{
-
-font-size:30px;
-
-}
+    }
 
 }
