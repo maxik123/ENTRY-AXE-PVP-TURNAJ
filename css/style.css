@@ -1,0 +1,9 @@
+
+body{margin:0;background:#0f1115;color:#fff;font-family:Arial,sans-serif}
+.hero{text-align:center;padding:30px;background:#181b22}
+.scroll{overflow:auto;padding:20px}
+.bracket{display:grid;grid-template-columns:300px 100px 220px;gap:14px;width:max-content}
+.match{background:#232833;border:1px solid #444;border-radius:10px;padding:12px;cursor:pointer}
+.match:hover{background:#b91c1c}
+.line{height:2px;background:#888;align-self:center}
+.selected{background:#15803d!important}
