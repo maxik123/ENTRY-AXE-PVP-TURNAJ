@@ -20,6 +20,7 @@ body {
 }
 
 
+
 /* =====================
         HEADER
 ===================== */
@@ -43,7 +44,6 @@ body {
 }
 
 
-
 .hero h1 {
 
     font-size:48px;
@@ -64,9 +64,6 @@ body {
     font-size:20px;
 
 }
-
-
-
 
 
 
@@ -94,7 +91,6 @@ body {
 
 
 
-
 .leaderboard-top {
 
     display:flex !important;
@@ -113,10 +109,7 @@ body {
 
     margin:auto;
 
-    flex-wrap:nowrap !important;
-
 }
-
 
 
 
@@ -143,7 +136,6 @@ body {
 }
 
 
-
 .top-place:hover {
 
     transform:translateY(-10px);
@@ -153,13 +145,11 @@ body {
 }
 
 
-
 .top-place img {
 
     height:150px;
 
 }
-
 
 
 .top-place h3 {
@@ -171,13 +161,11 @@ body {
 }
 
 
-
 .place {
 
     font-size:40px;
 
 }
-
 
 
 .first {
@@ -191,7 +179,6 @@ body {
 }
 
 
-
 .first img {
 
     height:200px;
@@ -199,21 +186,11 @@ body {
 }
 
 
-
-.first:hover {
-
-    transform:translateY(-40px);
-
-}
-
-
-
 .second {
 
     order:1;
 
 }
-
 
 
 .third {
@@ -224,13 +201,8 @@ body {
 
 
 
-
-
-
-
-
 /* =====================
-        VŠICHNI HRÁČI
+        PLAYERS
 ===================== */
 
 
@@ -243,7 +215,6 @@ body {
 }
 
 
-
 .players-section h2 {
 
     font-size:32px;
@@ -254,10 +225,11 @@ body {
 
 
 
-
 #players {
 
-    max-width:900px;
+    width:100%;
+
+    max-width:800px;
 
     margin:auto;
 
@@ -272,57 +244,34 @@ body {
 
 
 
-
-
 .player-card {
-
 
     width:100%;
 
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
 
     background:
     linear-gradient(145deg,#151515,#080808);
 
-
-
     border:1px solid #333;
-
-
 
     border-radius:15px;
 
-
-
     padding:15px 25px;
-
-
-
-    display:flex;
-
-
-
-    align-items:center;
-
-
-
-    justify-content:space-between;
-
-
-
-    gap:25px;
-
-
-
-    transition:.3s;
-
-
 
     box-shadow:
 
     0 10px 25px rgba(0,0,0,.5);
 
-}
+    transition:.3s;
 
+}
 
 
 .player-card:hover {
@@ -335,33 +284,58 @@ body {
 
 
 
-.player-card img {
+/* ČÍSLO HRÁČE */
 
-    width:80px;
 
-    height:80px;
+.player-number {
+
+    width:50px;
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#888;
+
+    text-align:center;
 
 }
 
 
 
+/* SKIN */
+
+
+.player-card img {
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:8px;
+
+}
+
+
+
+/* JMÉNO */
+
+
 .player-card h3 {
+
+    flex:1;
 
     margin:0;
 
     font-size:20px;
 
+    text-align:left;
+
 }
 
 
 
-
-
-
-
-/* =====================
-        RANKY
-===================== */
+/* RANK */
 
 
 .rank {
@@ -380,7 +354,6 @@ body {
 
 
 
-
 .LT1 {
 
     background:#facc15;
@@ -388,7 +361,6 @@ body {
     color:black;
 
 }
-
 
 
 .HT2 {
@@ -400,7 +372,6 @@ body {
 }
 
 
-
 .LT2 {
 
     background:#2563eb;
@@ -408,7 +379,6 @@ body {
     color:white;
 
 }
-
 
 
 .HT3 {
@@ -420,7 +390,6 @@ body {
 }
 
 
-
 .LT3 {
 
     background:#555;
@@ -428,10 +397,6 @@ body {
     color:white;
 
 }
-
-
-
-
 
 
 
@@ -450,7 +415,6 @@ body {
 }
 
 
-
 .leaderboard-top {
 
     flex-direction:column !important;
@@ -460,7 +424,6 @@ body {
 }
 
 
-
 .first {
 
     transform:none;
@@ -468,88 +431,28 @@ body {
 }
 
 
-
 .player-card {
 
-    padding:15px;
+    padding:12px;
 
 }
 
+
+.player-number {
+
+    width:35px;
+
+    font-size:18px;
+
+}
 
 
 .player-card img {
 
-    width:60px;
+    width:50px;
 
-    height:60px;
-
-}
-
+    height:50px;
 
 }
-/* =========================
-   PLAYER LIST FIX
-========================= */
-
-
-#players {
-
-    max-width:800px !important;
-
-    margin:0 auto !important;
-
-    display:flex !important;
-
-    flex-direction:column !important;
-
-    gap:15px !important;
-
-}
-
-
-
-.player-card {
-
-    width:100% !important;
-
-    height:90px;
-
-    display:flex !important;
-
-    flex-direction:row !important;
-
-    align-items:center !important;
-
-    justify-content:flex-start !important;
-
-    gap:25px !important;
-
-}
-
-
-
-.player-card img {
-
-    width:60px !important;
-
-    height:60px !important;
-
-}
-
-
-
-.player-card h3 {
-
-    flex:1;
-
-    text-align:left;
-
-}
-
-
-
-.player-card .rank {
-
-    margin-left:auto;
 
 }
