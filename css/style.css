@@ -1,405 +1,607 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
 
-* {
-    box-sizing:border-box;
-}
-
-
-body {
-
-    margin:0;
-
-    background:
-    radial-gradient(circle at top,#202020,#050505 70%);
-
-    color:white;
-
-    font-family:'Montserrat',Arial,sans-serif;
-
+*{
+box-sizing:border-box;
 }
 
 
 
-/* HEADER */
+body{
 
+margin:0;
 
-.hero {
+background:
+radial-gradient(circle at top,#222,#050505 70%);
 
-    text-align:center;
+color:white;
 
-    padding:50px 20px;
-
-}
-
-
-.logo {
-
-    width:170px;
-
-    margin-bottom:20px;
-
-    filter:
-    drop-shadow(0 0 20px rgba(255,255,255,.25));
-
-}
-
-
-.hero h1 {
-
-    font-size:48px;
-
-    font-weight:800;
-
-    letter-spacing:3px;
-
-}
-
-
-.hero p {
-
-    color:#aaa;
-
-    font-size:20px;
+font-family:'Montserrat',sans-serif;
 
 }
 
 
 
-/* =====================
-      TOP 3 HRÁČI
-===================== */
 
+.hero{
 
-.top-section {
+text-align:center;
 
-    text-align:center;
-
-    margin:50px auto;
-
-}
-
-
-.top-section h2 {
-
-    font-size:32px;
-
-    margin-bottom:35px;
+padding:50px;
 
 }
 
 
 
-.top3 {
+.logo{
 
-    display:flex;
+width:170px;
 
-    justify-content:center;
-
-    align-items:center;
-
-    gap:35px;
-
-    flex-wrap:wrap;
+filter:drop-shadow(0 0 20px white);
 
 }
 
 
 
-.top-card {
+.hero h1{
 
+font-size:48px;
 
-    width:240px;
-
-    background:
-    linear-gradient(145deg,#151515,#080808);
-
-
-    border:1px solid #333;
-
-
-    border-radius:18px;
-
-
-    padding:25px;
-
-
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.6);
-
-
-    transition:.3s;
+letter-spacing:3px;
 
 }
 
 
 
-.top-card:hover {
+.hero p{
 
-    transform:translateY(-8px);
+color:#aaa;
 
-    border-color:#fff;
-
-}
-
-
-
-.top-card img {
-
-
-    height:170px;
-
-    width:auto;
-
+font-size:20px;
 
 }
 
 
 
-.top-card h3 {
-
-
-    margin:15px 0;
-
-    font-size:22px;
-
-}
 
 
 
-/* =====================
-       RANKY
-===================== */
+/* TOP 3 */
 
 
-.rank {
+.top-section{
 
-    display:inline-block;
+text-align:center;
 
-    padding:6px 14px;
-
-    border-radius:8px;
-
-    font-size:13px;
-
-    font-weight:800;
+margin:50px 0;
 
 }
 
 
 
-.LT3 {
+.top-section h2,
+.players-section h2{
 
-    background:#555;
-
-    color:white;
-
-}
-
-
-
-.HT3 {
-
-    background:#21c55d;
-
-    color:white;
+font-size:32px;
 
 }
 
 
 
-.LT2 {
+.top3{
 
-    background:#2563eb;
+display:flex;
 
-    color:white;
+justify-content:center;
 
-}
+gap:35px;
 
-
-
-.HT2 {
-
-    background:#9333ea;
-
-    color:white;
+flex-wrap:wrap;
 
 }
 
 
 
-.LT1 {
 
-    background:#facc15;
+.top-player{
 
-    color:black;
+width:230px;
 
-}
+background:#090909;
 
+border:1px solid #333;
 
+border-radius:18px;
 
-/* =====================
-       BRACKET
-===================== */
+padding:25px;
 
+transition:.3s;
 
-.scroll {
-
-    width:100%;
-
-    overflow-x:auto;
-
-    padding:40px;
+box-shadow:0 10px 30px black;
 
 }
 
 
 
-.bracket {
+.top-player:hover{
 
-    display:flex;
+transform:translateY(-8px);
 
-    justify-content:center;
-
-    gap:50px;
+border-color:white;
 
 }
 
 
 
-.round {
+.top-player img{
 
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-around;
-
-    gap:25px;
+height:160px;
 
 }
 
 
 
-/* HRÁČSKÁ KARTA */
+.top-player h3{
 
-
-.player {
-
-
-    width:260px;
-
-    height:75px;
-
-
-    background:
-    linear-gradient(145deg,#151515,#080808);
-
-
-    border:1px solid #333;
-
-
-    border-radius:12px;
-
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-
-    padding:0 18px;
-
-
-    transition:.25s;
-
-
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.5);
+margin:15px;
 
 }
 
 
 
-.player:hover {
-
-    transform:translateY(-5px);
-
-    border-color:white;
-
-}
 
 
 
-.player-name {
+/* PLAYERS */
 
-    font-size:17px;
 
-    font-weight:700;
+.players-section{
+
+text-align:center;
+
+padding:40px;
 
 }
 
 
 
-/* SPOJE */
+#players{
 
+max-width:1200px;
 
-.match {
+margin:auto;
 
-    position:relative;
+display:grid;
 
-}
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
 
-
-
-.match::after {
-
-    content:"";
-
-    position:absolute;
-
-    right:-50px;
-
-    top:50%;
-
-    width:50px;
-
-    height:2px;
-
-    background:#444;
+gap:20px;
 
 }
 
 
 
-/* MOBILE */
+.player-card{
+
+background:#090909;
+
+border:1px solid #333;
+
+border-radius:15px;
+
+padding:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+transition:.3s;
+
+}
+
+
+
+.player-card:hover{
+
+transform:scale(1.05);
+
+border-color:white;
+
+}
+
+
+
+.player-card img{
+
+height:80px;
+
+}
+
+
+
+
+.player-card h3{
+
+margin:0 0 10px;
+
+}
+
+
+
+
+
+
+
+/* RANKY */
+
+
+.rank{
+
+padding:6px 14px;
+
+border-radius:8px;
+
+font-weight:800;
+
+font-size:13px;
+
+}
+
+
+
+.LT1{
+
+background:#facc15;
+
+color:black;
+
+}
+
+
+.HT2{
+
+background:#9333ea;
+
+}
+
+
+.LT2{
+
+background:#2563eb;
+
+}
+
+
+.HT3{
+
+background:#22c55e;
+
+}
+
+
+.LT3{
+
+background:#555;
+
+}
+
+
+
+
 
 
 @media(max-width:700px){
 
+.hero h1{
 
-.hero h1 {
+font-size:30px;
 
-    font-size:32px;
+}
+
+}@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+
+*{
+box-sizing:border-box;
+}
+
+
+
+body{
+
+margin:0;
+
+background:
+radial-gradient(circle at top,#222,#050505 70%);
+
+color:white;
+
+font-family:'Montserrat',sans-serif;
 
 }
 
 
 
-.top-card {
 
-    width:210px;
+.hero{
+
+text-align:center;
+
+padding:50px;
+
+}
+
+
+
+.logo{
+
+width:170px;
+
+filter:drop-shadow(0 0 20px white);
 
 }
 
 
 
-.player {
+.hero h1{
 
-    width:220px;
+font-size:48px;
+
+letter-spacing:3px;
 
 }
 
+
+
+.hero p{
+
+color:#aaa;
+
+font-size:20px;
+
+}
+
+
+
+
+
+
+/* TOP 3 */
+
+
+.top-section{
+
+text-align:center;
+
+margin:50px 0;
+
+}
+
+
+
+.top-section h2,
+.players-section h2{
+
+font-size:32px;
+
+}
+
+
+
+.top3{
+
+display:flex;
+
+justify-content:center;
+
+gap:35px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+
+.top-player{
+
+width:230px;
+
+background:#090909;
+
+border:1px solid #333;
+
+border-radius:18px;
+
+padding:25px;
+
+transition:.3s;
+
+box-shadow:0 10px 30px black;
+
+}
+
+
+
+.top-player:hover{
+
+transform:translateY(-8px);
+
+border-color:white;
+
+}
+
+
+
+.top-player img{
+
+height:160px;
+
+}
+
+
+
+.top-player h3{
+
+margin:15px;
+
+}
+
+
+
+
+
+
+/* PLAYERS */
+
+
+.players-section{
+
+text-align:center;
+
+padding:40px;
+
+}
+
+
+
+#players{
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+
+
+.player-card{
+
+background:#090909;
+
+border:1px solid #333;
+
+border-radius:15px;
+
+padding:20px;
+
+display:flex;
+
+align-items:center;
+
+gap:20px;
+
+transition:.3s;
+
+}
+
+
+
+.player-card:hover{
+
+transform:scale(1.05);
+
+border-color:white;
+
+}
+
+
+
+.player-card img{
+
+height:80px;
+
+}
+
+
+
+
+.player-card h3{
+
+margin:0 0 10px;
+
+}
+
+
+
+
+
+
+
+/* RANKY */
+
+
+.rank{
+
+padding:6px 14px;
+
+border-radius:8px;
+
+font-weight:800;
+
+font-size:13px;
+
+}
+
+
+
+.LT1{
+
+background:#facc15;
+
+color:black;
+
+}
+
+
+.HT2{
+
+background:#9333ea;
+
+}
+
+
+.LT2{
+
+background:#2563eb;
+
+}
+
+
+.HT3{
+
+background:#22c55e;
+
+}
+
+
+.LT3{
+
+background:#555;
+
+}
+
+
+
+
+
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:30px;
+
+}
 
 }
