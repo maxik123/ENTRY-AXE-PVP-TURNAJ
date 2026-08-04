@@ -487,3 +487,69 @@ body {
 
 
 }
+/* =========================
+   PLAYER LIST FIX
+========================= */
+
+
+#players {
+
+    max-width:800px !important;
+
+    margin:0 auto !important;
+
+    display:flex !important;
+
+    flex-direction:column !important;
+
+    gap:15px !important;
+
+}
+
+
+
+.player-card {
+
+    width:100% !important;
+
+    height:90px;
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    align-items:center !important;
+
+    justify-content:flex-start !important;
+
+    gap:25px !important;
+
+}
+
+
+
+.player-card img {
+
+    width:60px !important;
+
+    height:60px !important;
+
+}
+
+
+
+.player-card h3 {
+
+    flex:1;
+
+    text-align:left;
+
+}
+
+
+
+.player-card .rank {
+
+    margin-left:auto;
+
+}
