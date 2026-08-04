@@ -4,7 +4,7 @@ const players = [
     // ===== LT1 =====
 
     {
-        name:"Lukyng_",
+        name:"_Lukyng",
         rank:"LT1"
     },
 
