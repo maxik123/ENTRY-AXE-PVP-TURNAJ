@@ -494,3 +494,51 @@ body::before {
     z-index:9999;
 
 }
+/* FINAL TOP 3 FIX */
+
+section.top-section {
+    width:100%;
+}
+
+
+div.leaderboard-top {
+    display:flex !important;
+    flex-direction:row !important;
+    justify-content:center !important;
+    align-items:flex-end !important;
+    gap:40px !important;
+    flex-wrap:nowrap !important;
+}
+
+
+div.top-place {
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    width:230px !important;
+    min-width:230px !important;
+}
+
+
+div.first {
+    order:2 !important;
+}
+
+
+div.second {
+    order:1 !important;
+}
+
+
+div.third {
+    order:3 !important;
+}
+
+
+@media(max-width:900px){
+
+    div.leaderboard-top {
+        flex-wrap:wrap !important;
+    }
+
+}
