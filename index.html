@@ -1,36 +1,152 @@
 <!doctype html>
 <html lang="cs">
+
 <head>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>AXE Tournament</title>
+
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
+
 
 <header class="hero">
 
+
     <img src="./img/logo.png" class="logo" alt="AXE Tournament Logo">
 
+
     <h1>🏆 AXE TOURNAMENT</h1>
+
+
     <p>Round of 32</p>
+
 
 </header>
 
 
+
+
+
+<!-- TOP 3 HRÁČI -->
+
+
+<section class="top-section">
+
+
+<h2>🏆 TOP 3 HRÁČI</h2>
+
+
+<div class="top3">
+
+
+
+<div class="top-card">
+
+<img src="https://mc-heads.net/body/Lukyng">
+
+<h3>🥇 Lukyng</h3>
+
+<span class="rank LT1">
+LT1
+</span>
+
+</div>
+
+
+
+
+<div class="top-card">
+
+<img src="https://mc-heads.net/body/Mathhew">
+
+<h3>🥈 Mathhew</h3>
+
+<span class="rank LT1">
+LT1
+</span>
+
+</div>
+
+
+
+
+<div class="top-card">
+
+<img src="https://mc-heads.net/body/Kufrajz">
+
+<h3>🥉 Kufrajz</h3>
+
+<span class="rank LT1">
+LT1
+</span>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- VŠICHNI HRÁČI -->
+
+
+<section class="players-section">
+
+
+<h2>👥 VŠICHNI HRÁČI</h2>
+
+
+<div id="players"></div>
+
+
+</section>
+
+
+
+
+
+
+<!-- BRACKET -->
+
+
 <main class="tournament">
 
-    <div class="scroll">
-        <div id="bracket" class="bracket"></div>
-    </div>
+
+<h2>⚔️ TURNAJOVÝ BRACKET</h2>
+
+
+<div class="scroll">
+
+<div id="bracket" class="bracket"></div>
+
+</div>
+
 
 </main>
 
 
+
+
+
+<script src="js/players.js"></script>
+
 <script src="js/bracket.js"></script>
 
+
 </body>
+
 </html>
