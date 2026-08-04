@@ -1,4 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+
 const players = [
+
 
 {
 name:"Lukyng",
@@ -64,21 +68,32 @@ name:"Wbot",
 rank:"LT3"
 }
 
+
 ];
 
 
 
-const container =
-document.getElementById("players");
+const container = document.getElementById("players");
+
+
+if(!container){
+
+console.error("Chybí #players v HTML");
+
+return;
+
+}
 
 
 
-players.forEach(player=>{
+players.forEach(player => {
 
 
 container.innerHTML += `
 
+
 <div class="player-card">
+
 
 <img src="https://mc-heads.net/avatar/${player.name}">
 
@@ -87,6 +102,7 @@ container.innerHTML += `
 
 <h3>${player.name}</h3>
 
+
 <span class="rank ${player.rank}">
 ${player.rank}
 </span>
@@ -94,9 +110,14 @@ ${player.rank}
 
 </div>
 
+
 </div>
 
 
 `;
+
+
+});
+
 
 });
