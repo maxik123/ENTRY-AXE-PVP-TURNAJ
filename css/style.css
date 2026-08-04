@@ -2,7 +2,7 @@
 
 
 * {
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 
@@ -18,7 +18,6 @@ body {
     font-family:'Montserrat',Arial,sans-serif;
 
 }
-
 
 
 /* =====================
@@ -58,7 +57,6 @@ body {
 }
 
 
-
 .hero p {
 
     color:#aaa;
@@ -66,7 +64,6 @@ body {
     font-size:20px;
 
 }
-
 
 
 
@@ -87,7 +84,6 @@ body {
 }
 
 
-
 .top-section h2 {
 
     font-size:32px;
@@ -97,10 +93,6 @@ body {
 }
 
 
-
-
-
-/* TOP 3 KONTEJNER */
 
 
 .leaderboard-top {
@@ -126,10 +118,6 @@ body {
 }
 
 
-
-
-
-/* KARTY */
 
 
 .top-place {
@@ -192,12 +180,6 @@ body {
 
 
 
-
-
-
-/* 1. místo */
-
-
 .first {
 
     order:2;
@@ -226,20 +208,12 @@ body {
 
 
 
-
-/* 2. místo */
-
-
 .second {
 
     order:1;
 
 }
 
-
-
-
-/* 3. místo */
 
 
 .third {
@@ -254,8 +228,9 @@ body {
 
 
 
+
 /* =====================
-        HRÁČI
+        VŠICHNI HRÁČI
 ===================== */
 
 
@@ -279,18 +254,18 @@ body {
 
 
 
+
 #players {
 
-    max-width:1200px;
+    max-width:900px;
 
     margin:auto;
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
+    flex-direction:column;
 
-    gap:20px;
+    gap:15px;
 
 }
 
@@ -298,24 +273,53 @@ body {
 
 
 
+
 .player-card {
+
+
+    width:100%;
+
 
     background:
     linear-gradient(145deg,#151515,#080808);
 
+
+
     border:1px solid #333;
+
+
 
     border-radius:15px;
 
-    padding:20px;
+
+
+    padding:15px 25px;
+
+
 
     display:flex;
 
+
+
     align-items:center;
 
-    gap:20px;
+
+
+    justify-content:space-between;
+
+
+
+    gap:25px;
+
+
 
     transition:.3s;
+
+
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.5);
 
 }
 
@@ -343,10 +347,11 @@ body {
 
 .player-card h3 {
 
-    margin:0 0 10px;
+    margin:0;
+
+    font-size:20px;
 
 }
-
 
 
 
@@ -372,7 +377,6 @@ body {
     font-weight:800;
 
 }
-
 
 
 
@@ -431,7 +435,6 @@ body {
 
 
 
-
 /* =====================
         MOBILE
 ===================== */
@@ -440,105 +443,47 @@ body {
 @media(max-width:700px){
 
 
-    .hero h1 {
+.hero h1 {
 
-        font-size:32px;
-
-    }
-
-
-    .leaderboard-top {
-
-        flex-direction:column !important;
-
-        align-items:center !important;
-
-        flex-wrap:nowrap !important;
-
-    }
-
-
-    .first {
-
-        transform:none;
-
-    }
-
-
-    .first:hover {
-
-        transform:translateY(-10px);
-
-    }
-
+    font-size:32px;
 
 }
-/* TEST UPDATE */
-
-body::before {
-
-    content:"NEW CSS LOADED";
-
-    position:fixed;
-
-    top:10px;
-
-    right:10px;
-
-    background:red;
-
-    color:white;
-
-    padding:10px;
-
-    z-index:9999;
-
-}
-/* FINAL TOP 3 FIX */
-
-section.top-section {
-    width:100%;
-}
 
 
-div.leaderboard-top {
-    display:flex !important;
-    flex-direction:row !important;
-    justify-content:center !important;
-    align-items:flex-end !important;
-    gap:40px !important;
-    flex-wrap:nowrap !important;
-}
 
+.leaderboard-top {
 
-div.top-place {
-    display:flex !important;
     flex-direction:column !important;
+
     align-items:center !important;
-    width:230px !important;
-    min-width:230px !important;
+
 }
 
 
-div.first {
-    order:2 !important;
+
+.first {
+
+    transform:none;
+
 }
 
 
-div.second {
-    order:1 !important;
+
+.player-card {
+
+    padding:15px;
+
 }
 
 
-div.third {
-    order:3 !important;
+
+.player-card img {
+
+    width:60px;
+
+    height:60px;
+
 }
 
-
-@media(max-width:900px){
-
-    div.leaderboard-top {
-        flex-wrap:wrap !important;
-    }
 
 }
