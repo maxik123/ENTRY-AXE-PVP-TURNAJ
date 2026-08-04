@@ -13,7 +13,7 @@ const players = [
     },
 
     {
-        name:"Kufrajz",
+        name:"kufrajzcz",
         rank:"LT1"
     },
 
@@ -21,15 +21,19 @@ const players = [
     // ===== HT2 =====
 
     {
-        name:"Ze1ro",
+        name:"Ze1ro00",
         rank:"HT2"
     },
 
     {
-        name:"Caisem",
+        name:"caisem",
         rank:"HT2"
     },
-
+   
+    {
+        name:"M3gaBoy_",
+        rank:"HT2"
+    },
 
     // ===== LT2 =====
 
@@ -44,12 +48,12 @@ const players = [
     },
 
     {
-        name:"Siwi",
+        name:"SievT",
         rank:"LT2"
     },
 
     {
-        name:"Zombee",
+        name:"ZomBeeX",
         rank:"LT2"
     },
 
@@ -67,7 +71,7 @@ const players = [
     // ===== HT3 =====
 
     {
-        name:"Adams",
+        name:"adams297",
         rank:"HT3"
     },
 
@@ -82,22 +86,17 @@ const players = [
     },
 
     {
-        name:"Silvestr",
-        rank:"HT3"
-    },
-
-    {
         name:"MajorDTJ",
         rank:"HT3"
     },
 
     {
-        name:"Predator",
+        name:"Predator_18",
         rank:"HT3"
     },
 
     {
-        name:"Vratous",
+        name:"ksd_argys",
         rank:"HT3"
     },
 
@@ -107,7 +106,7 @@ const players = [
     },
 
     {
-        name:"Lukyk",
+        name:"Lukyk656",
         rank:"HT3"
     },
 
@@ -125,32 +124,12 @@ const players = [
     },
 
     {
-        name:"Mawy",
-        rank:"LT3"
-    },
-
-    {
-        name:"clovek",
-        rank:"LT3"
-    },
-
-    {
-        name:"brambora",
-        rank:"LT3"
-    },
-
-    {
-        name:"itrexiik",
-        rank:"LT3"
-    },
-
-    {
         name:"Jangche",
         rank:"LT3"
     },
 
     {
-        name:"Niconko",
+        name:"Niconko2",
         rank:"LT3"
     },
 
@@ -160,22 +139,22 @@ const players = [
     },
 
     {
-        name:"Sajk",
+        name:"Sajk3000",
         rank:"LT3"
     },
 
     {
-        name:"Tomio",
+        name:"Tomas123456",
         rank:"LT3"
     },
 
     {
-        name:"Wbot",
+        name:"WBotWarrior7",
         rank:"LT3"
     },
 
     {
-        name:"Hungi",
+        name:"Hungi_",
         rank:"LT3"
     },
 
@@ -185,7 +164,7 @@ const players = [
     },
 
     {
-        name:"Cieslik",
+        name:"Ciesliik",
         rank:"LT3"
     },
 
