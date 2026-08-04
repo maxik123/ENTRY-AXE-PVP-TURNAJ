@@ -1,4 +1,3 @@
-alert("NOVÝ JS FUNGUJE");
 const players = [
 
     // ===== LT1 =====
