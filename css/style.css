@@ -412,3 +412,43 @@ font-size:32px;
 
 
 }
+/* FORCE TOP 3 HORIZONTAL LAYOUT */
+
+.leaderboard-top {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    gap: 40px !important;
+    width: 100% !important;
+}
+
+
+.top-place {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+
+.first {
+    order: 2 !important;
+}
+
+.second {
+    order: 1 !important;
+}
+
+.third {
+    order: 3 !important;
+}
+
+
+@media(max-width:700px){
+
+    .leaderboard-top {
+        flex-direction: column !important;
+        align-items:center !important;
+    }
+
+}
