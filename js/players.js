@@ -3,12 +3,12 @@ const players = [
     // ===== LT1 =====
 
     {
-        name:"Lukyng",
+        name:"Lukyng_",
         rank:"LT1"
     },
 
     {
-        name:"Mathhew",
+        name:"MINER99",
         rank:"LT1"
     },
 
@@ -59,7 +59,7 @@ const players = [
     },
 
     {
-        name:"henny",
+        name:"qHenny",
         rank:"LT2"
     },
 
@@ -72,7 +72,7 @@ const players = [
     },
 
     {
-        name:"Kyokutan",
+        name:"Kyokutan_",
         rank:"HT3"
     },
 
@@ -115,7 +115,7 @@ const players = [
     // ===== LT3 =====
 
     {
-        name:"Drtička",
+        name:"Drticka",
         rank:"LT3"
     },
 
