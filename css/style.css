@@ -825,3 +825,125 @@ body {
 }
 
 }
+/* =====================
+        BUTTONS
+===================== */
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.main-button,
+.discord-button,
+.youtube-button{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+/* Pavouk */
+.main-button{
+
+    background:
+    linear-gradient(145deg,#facc15,#eab308);
+
+    color:black;
+
+    box-shadow:
+    0 10px 30px rgba(250,204,21,.3);
+
+}
+
+.main-button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 40px rgba(250,204,21,.5);
+
+}
+
+/* Discord */
+.discord-button{
+
+    background:
+    linear-gradient(145deg,#5865F2,#4752C4);
+
+    color:white;
+
+    box-shadow:
+    0 10px 30px rgba(88,101,242,.35);
+
+}
+
+.discord-button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 40px rgba(88,101,242,.55);
+
+}
+
+/* YouTube */
+.youtube-button{
+
+    background:
+    linear-gradient(145deg,#ff3b30,#cc0000);
+
+    color:white;
+
+    box-shadow:
+    0 10px 30px rgba(255,0,0,.35);
+
+}
+
+.youtube-button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 15px 40px rgba(255,0,0,.55);
+
+}
+
+@media(max-width:700px){
+.buttons{flex-direction:column;gap:12px;}
+.main-button,.discord-button,.youtube-button{width:260px;}
+
+.buttons{
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.main-button,
+.discord-button,
+.youtube-button{
+
+    width:260px;
+
+}
+
+}
