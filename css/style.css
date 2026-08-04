@@ -8,16 +8,17 @@
 
 body {
 
-    margin: 0;
+    margin:0;
 
     background:
-    radial-gradient(circle at top, #222, #050505 70%);
+    radial-gradient(circle at top,#222,#050505 70%);
 
-    color: white;
+    color:white;
 
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family:'Montserrat',Arial,sans-serif;
 
 }
+
 
 
 /* =====================
@@ -27,33 +28,35 @@ body {
 
 .hero {
 
-    text-align: center;
+    text-align:center;
 
-    padding: 50px 20px;
+    padding:50px 20px;
 
 }
 
 
 .logo {
 
-    width: 170px;
+    width:170px;
 
-    filter: drop-shadow(0 0 20px white);
+    filter:drop-shadow(0 0 20px white);
 
 }
+
 
 
 .hero h1 {
 
-    font-size: 48px;
+    font-size:48px;
 
-    font-weight: 800;
+    font-weight:800;
 
-    letter-spacing: 3px;
+    letter-spacing:3px;
 
     margin:20px 0 10px;
 
 }
+
 
 
 .hero p {
@@ -63,6 +66,8 @@ body {
     font-size:20px;
 
 }
+
+
 
 
 
@@ -83,8 +88,7 @@ body {
 
 
 
-.top-section h2,
-.players-section h2 {
+.top-section h2 {
 
     font-size:32px;
 
@@ -96,24 +100,28 @@ body {
 
 
 
-/* HLAVNÍ TOP 3 KONTEJNER */
+/* TOP 3 KONTEJNER */
 
 
 .leaderboard-top {
 
-    display:flex;
+    display:flex !important;
 
-    flex-direction:row;
+    flex-direction:row !important;
 
-    justify-content:center;
+    justify-content:center !important;
 
-    align-items:flex-end;
+    align-items:flex-end !important;
 
-    gap:35px;
+    gap:25px;
 
     width:100%;
 
-    flex-wrap:nowrap;
+    max-width:900px;
+
+    margin:auto;
+
+    flex-wrap:nowrap !important;
 
 }
 
@@ -121,32 +129,26 @@ body {
 
 
 
-/* KARTA HRÁČE */
+/* KARTY */
 
 
 .top-place {
 
-    width:230px;
+    flex:0 0 230px;
 
     background:
     linear-gradient(145deg,#151515,#080808);
-
 
     border:1px solid #333;
 
     border-radius:20px;
 
-
     padding:25px;
-
 
     text-align:center;
 
-
     box-shadow:
-
     0 15px 40px rgba(0,0,0,.7);
-
 
     transition:.3s;
 
@@ -192,7 +194,8 @@ body {
 
 
 
-/* 1. MÍSTO */
+
+/* 1. místo */
 
 
 .first {
@@ -224,8 +227,7 @@ body {
 
 
 
-
-/* 2. MÍSTO */
+/* 2. místo */
 
 
 .second {
@@ -237,8 +239,7 @@ body {
 
 
 
-
-/* 3. MÍSTO */
+/* 3. místo */
 
 
 .third {
@@ -268,19 +269,26 @@ body {
 
 
 
+.players-section h2 {
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+}
+
+
+
 #players {
 
     max-width:1200px;
 
     margin:auto;
 
-
     display:grid;
-
 
     grid-template-columns:
     repeat(auto-fit,minmax(250px,1fr));
-
 
     gap:20px;
 
@@ -289,33 +297,25 @@ body {
 
 
 
-.player-card {
 
+.player-card {
 
     background:
     linear-gradient(145deg,#151515,#080808);
 
-
     border:1px solid #333;
-
 
     border-radius:15px;
 
-
     padding:20px;
-
 
     display:flex;
 
-
     align-items:center;
-
 
     gap:20px;
 
-
     transition:.3s;
-
 
 }
 
@@ -346,6 +346,7 @@ body {
     margin:0 0 10px;
 
 }
+
 
 
 
@@ -429,6 +430,8 @@ body {
 
 
 
+
+
 /* =====================
         MOBILE
 ===================== */
@@ -444,13 +447,15 @@ body {
     }
 
 
-
     .leaderboard-top {
 
-        flex-wrap:wrap;
+        flex-direction:column !important;
+
+        align-items:center !important;
+
+        flex-wrap:nowrap !important;
 
     }
-
 
 
     .first {
@@ -458,7 +463,6 @@ body {
         transform:none;
 
     }
-
 
 
     .first:hover {
