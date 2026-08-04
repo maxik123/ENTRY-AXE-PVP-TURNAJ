@@ -1,9 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
-body{margin:0;background:#0f1115;color:#fff;font-family:Arial,sans-serif}
-.hero{text-align:center;padding:30px;background:#181b22}
-.scroll{overflow:auto;padding:20px}
-.bracket{display:grid;grid-template-columns:300px 100px 220px;gap:14px;width:max-content}
-.match{background:#232833;border:1px solid #444;border-radius:10px;padding:12px;cursor:pointer}
-.match:hover{background:#b91c1c}
-.line{height:2px;background:#888;align-self:center}
-.selected{background:#15803d!important}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin:0;
+    background:
+    radial-gradient(circle at top,#202020,#050505 60%);
+    color:white;
+    font-family:'Montserrat',Arial,sans-serif;
+}
+
+
+
+/* HEADER */
+
+.hero {
+
+    text-align:center;
+    padding:50px 20px;
+
+}
+
+
+.logo {
+
+    width:170px;
+    margin-bottom:20px;
+
+    filter:
+    drop-shadow(0 0 20px rgba(255,255,255,.25));
+
+}
+
+
+.hero h1 {
+
+    font-size:48px;
+    font-weight:800;
+    letter-spacing:3px;
+
+}
+
+
+.hero p {
+
+    color:#aaa;
+    font-size:20px;
+
+}
+
+
+
+/* BRACKET AREA */
+
+
+.scroll {
+
+    width:100%;
+    overflow-x:auto;
+    padding:40px;
+
+}
+
+
+.bracket {
+
+    display:flex;
+    justify-content:center;
+    gap:50px;
+
+}
+
+
+
+/* KOLO */
+
+.round {
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+
+    gap:25px;
+
+}
+
+
+
+/* HRÁČSKÁ KARTA */
+
+
+.player {
+
+    width:260px;
+    height:75px;
+
+    background:
+    linear-gradient(145deg,#151515,#080808);
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 18px;
+
+    transition:.25s;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.5);
+
+}
+
+
+.player:hover {
+
+    transform:translateY(-5px);
+
+    border-color:white;
+
+}
+
+
+
+/* JMÉNO */
+
+
+.player-name {
+
+    font-size:17px;
+    font-weight:700;
+
+}
+
+
+
+/* RANK */
+
+.rank {
+
+    padding:5px 10px;
+
+    border-radius:6px;
+
+    font-size:12px;
+
+    font-weight:800;
+
+}
+
+
+
+/* RANK COLORS */
+
+
+.LT3 {
+
+    background:#555;
+    color:white;
+
+}
+
+
+.HT3 {
+
+    background:#21c55d;
+    color:white;
+
+}
+
+
+.LT2 {
+
+    background:#2563eb;
+    color:white;
+
+}
+
+
+.HT2 {
+
+    background:#9333ea;
+    color:white;
+
+}
+
+
+.LT1 {
+
+    background:#facc15;
+    color:black;
+
+}
+
+
+
+/* SPOJE MEZI HRÁČI */
+
+
+.match {
+
+    position:relative;
+
+}
+
+
+.match::after {
+
+    content:"";
+
+    position:absolute;
+
+    right:-50px;
+
+    top:50%;
+
+    width:50px;
+
+    height:2px;
+
+    background:#444;
+
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:32px;
+
+}
+
+
+.player{
+
+width:220px;
+
+}
+
+}
