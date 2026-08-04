@@ -206,12 +206,17 @@ const container = document.getElementById("players");
 
 
 
-players.forEach(player => {
+players.forEach((player, index) => {
 
 
     container.innerHTML += `
 
     <div class="player-card">
+
+
+        <div class="player-number">
+            #${index + 1}
+        </div>
 
 
         <img 
