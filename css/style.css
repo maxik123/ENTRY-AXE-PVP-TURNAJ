@@ -1,166 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
 
-*{
-box-sizing:border-box;
+* {
+    box-sizing: border-box;
 }
 
 
+body {
 
-body{
+    margin: 0;
 
-margin:0;
+    background:
+    radial-gradient(circle at top, #222, #050505 70%);
 
-background:
-radial-gradient(circle at top,#222,#050505 70%);
+    color: white;
 
-color:white;
-
-font-family:'Montserrat',sans-serif;
-
-}
-
-
-
-
-
-.hero{
-
-text-align:center;
-
-padding:50px 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
 
 }
 
 
+/* =====================
+        HEADER
+===================== */
 
-.logo{
 
-width:170px;
+.hero {
 
-filter:drop-shadow(0 0 20px white);
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+.logo {
+
+    width: 170px;
+
+    filter: drop-shadow(0 0 20px white);
+
+}
+
+
+.hero h1 {
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin:20px 0 10px;
+
+}
+
+
+.hero p {
+
+    color:#aaa;
+
+    font-size:20px;
 
 }
 
 
 
-.hero h1{
-
-font-size:48px;
-
-letter-spacing:3px;
-
-}
 
 
+/* =====================
+        TOP 3
+===================== */
 
 
+.top-section {
 
-.hero p{
+    text-align:center;
 
-color:#aaa;
-
-font-size:20px;
-
-}
-
-
-
-
-
-
-/* TOP 3 */
-
-
-.top-section{
-
-text-align:center;
-
-margin:50px auto;
+    margin:50px auto;
 
 }
 
 
 
 .top-section h2,
-.players-section h2{
+.players-section h2 {
 
-font-size:32px;
+    font-size:32px;
 
-}
-
-
-
-
-
-.leaderboard-top{
-
-
-display:flex;
-
-
-flex-direction:row;
-
-
-justify-content:center;
-
-
-align-items:flex-end;
-
-
-gap:35px;
-
-
-width:100%;
-
-
-flex-wrap:nowrap;
-
-
-}
-
-
-
-
-.top-place{
-
-
-width:230px;
-
-
-background:
-linear-gradient(145deg,#151515,#080808);
-
-
-border:1px solid #333;
-
-
-border-radius:20px;
-
-
-padding:25px;
-
-
-text-align:center;
-
-
-box-shadow:
-0 15px 40px rgba(0,0,0,.7);
-
-
-transition:.3s;
-
-
-}
-
-
-
-
-.top-place:hover{
-
-transform:translateY(-10px);
-
-border-color:white;
+    margin-bottom:40px;
 
 }
 
@@ -168,287 +96,376 @@ border-color:white;
 
 
 
-.top-place img{
+/* HLAVNÍ TOP 3 KONTEJNER */
 
-height:150px;
-
-}
-
-
-
-
-.top-place h3{
-
-font-size:22px;
-
-}
-
-
-
-
-
-.place{
-
-font-size:35px;
-
-}
-
-
-
-
-
-.first{
-
-
-transform:translateY(-30px);
-
-
-border-color:#facc15;
-
-
-}
-
-
-
-.first img{
-
-height:200px;
-
-}
-
-
-
-.first:hover{
-
-transform:translateY(-40px);
-
-}
-
-
-
-
-
-
-/* HRÁČI */
-
-
-.players-section{
-
-padding:40px 20px;
-
-text-align:center;
-
-}
-
-
-
-#players{
-
-
-max-width:1200px;
-
-
-margin:auto;
-
-
-display:grid;
-
-
-grid-template-columns:
-repeat(auto-fit,minmax(250px,1fr));
-
-
-gap:20px;
-
-
-}
-
-
-
-
-.player-card{
-
-
-background:
-linear-gradient(145deg,#151515,#080808);
-
-
-border:1px solid #333;
-
-
-border-radius:15px;
-
-
-padding:20px;
-
-
-display:flex;
-
-
-align-items:center;
-
-
-gap:20px;
-
-
-}
-
-
-
-
-
-.player-card img{
-
-width:80px;
-
-height:80px;
-
-}
-
-
-
-.player-card h3{
-
-margin:0 0 10px;
-
-}
-
-
-
-
-
-
-/* RANKY */
-
-
-.rank{
-
-
-display:inline-block;
-
-
-padding:6px 14px;
-
-
-border-radius:8px;
-
-
-font-weight:800;
-
-
-font-size:13px;
-
-
-}
-
-
-
-.LT1{
-
-background:#facc15;
-
-color:black;
-
-}
-
-
-.HT2{
-
-background:#9333ea;
-
-}
-
-
-
-.LT2{
-
-background:#2563eb;
-
-}
-
-
-
-.HT3{
-
-background:#22c55e;
-
-}
-
-
-
-.LT3{
-
-background:#555;
-
-}
-
-
-
-
-
-
-@media(max-width:700px){
-
-
-.leaderboard-top{
-
-flex-wrap:wrap;
-
-}
-
-
-.first{
-
-transform:none;
-
-}
-
-
-.hero h1{
-
-font-size:32px;
-
-}
-
-
-}
-/* FORCE TOP 3 HORIZONTAL LAYOUT */
 
 .leaderboard-top {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: flex-end !important;
-    gap: 40px !important;
-    width: 100% !important;
+
+    display:flex;
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    align-items:flex-end;
+
+    gap:35px;
+
+    width:100%;
+
+    flex-wrap:nowrap;
+
 }
+
+
+
+
+
+/* KARTA HRÁČE */
 
 
 .top-place {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
+
+    width:230px;
+
+    background:
+    linear-gradient(145deg,#151515,#080808);
+
+
+    border:1px solid #333;
+
+    border-radius:20px;
+
+
+    padding:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.7);
+
+
+    transition:.3s;
+
 }
+
+
+
+.top-place:hover {
+
+    transform:translateY(-10px);
+
+    border-color:white;
+
+}
+
+
+
+.top-place img {
+
+    height:150px;
+
+}
+
+
+
+.top-place h3 {
+
+    font-size:22px;
+
+    margin:15px 0;
+
+}
+
+
+
+.place {
+
+    font-size:40px;
+
+}
+
+
+
+
+
+/* 1. MÍSTO */
 
 
 .first {
-    order: 2 !important;
+
+    order:2;
+
+    transform:translateY(-30px);
+
+    border-color:#facc15;
+
 }
+
+
+
+.first img {
+
+    height:200px;
+
+}
+
+
+
+.first:hover {
+
+    transform:translateY(-40px);
+
+}
+
+
+
+
+
+/* 2. MÍSTO */
+
 
 .second {
-    order: 1 !important;
+
+    order:1;
+
 }
 
+
+
+
+
+/* 3. MÍSTO */
+
+
 .third {
-    order: 3 !important;
+
+    order:3;
+
 }
+
+
+
+
+
+
+
+/* =====================
+        HRÁČI
+===================== */
+
+
+.players-section {
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+
+#players {
+
+    max-width:1200px;
+
+    margin:auto;
+
+
+    display:grid;
+
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:20px;
+
+}
+
+
+
+
+.player-card {
+
+
+    background:
+    linear-gradient(145deg,#151515,#080808);
+
+
+    border:1px solid #333;
+
+
+    border-radius:15px;
+
+
+    padding:20px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.player-card:hover {
+
+    transform:translateY(-5px);
+
+    border-color:white;
+
+}
+
+
+
+.player-card img {
+
+    width:80px;
+
+    height:80px;
+
+}
+
+
+
+.player-card h3 {
+
+    margin:0 0 10px;
+
+}
+
+
+
+
+
+
+
+/* =====================
+        RANKY
+===================== */
+
+
+.rank {
+
+    display:inline-block;
+
+    padding:6px 14px;
+
+    border-radius:8px;
+
+    font-size:13px;
+
+    font-weight:800;
+
+}
+
+
+
+
+
+.LT1 {
+
+    background:#facc15;
+
+    color:black;
+
+}
+
+
+
+.HT2 {
+
+    background:#9333ea;
+
+    color:white;
+
+}
+
+
+
+.LT2 {
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+.HT3 {
+
+    background:#22c55e;
+
+    color:white;
+
+}
+
+
+
+.LT3 {
+
+    background:#555;
+
+    color:white;
+
+}
+
+
+
+
+
+
+/* =====================
+        MOBILE
+===================== */
 
 
 @media(max-width:700px){
 
-    .leaderboard-top {
-        flex-direction: column !important;
-        align-items:center !important;
+
+    .hero h1 {
+
+        font-size:32px;
+
     }
+
+
+
+    .leaderboard-top {
+
+        flex-wrap:wrap;
+
+    }
+
+
+
+    .first {
+
+        transform:none;
+
+    }
+
+
+
+    .first:hover {
+
+        transform:translateY(-10px);
+
+    }
+
 
 }
