@@ -668,3 +668,160 @@ body {
 
 
 }
+/* ==========================
+        ESPORT BRACKET
+========================== */
+
+
+.bracket-container {
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    padding:50px;
+
+    overflow-x:auto;
+
+}
+
+
+
+.stage {
+
+    width:220px;
+
+}
+
+
+.stage h3 {
+
+    text-align:center;
+
+    color:#aaa;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+.match {
+
+    background:#2b2622;
+
+    border:1px solid #4a4038;
+
+    border-left:3px solid #ff4538;
+
+    height:62px;
+
+    margin-bottom:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:0 15px;
+
+    position:relative;
+
+}
+
+
+
+.match span {
+
+    font-size:13px;
+
+    padding:5px 0;
+
+}
+
+
+
+.match span:first-child {
+
+    border-bottom:1px solid #444;
+
+}
+
+
+
+.match.big {
+
+    margin-top:120px;
+
+}
+
+
+
+
+.champion {
+
+    margin-top:80px;
+
+    background:#eabf28;
+
+    color:black;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-weight:800;
+
+    border:3px solid white;
+
+}
+
+
+
+/* propojení */
+
+.stage:not(:last-child) .match:after {
+
+    content:"";
+
+    position:absolute;
+
+    right:-40px;
+
+    top:50%;
+
+    width:40px;
+
+    border-top:2px dotted #ff4538;
+
+}
+
+
+
+.stage:not(:first-child) .match {
+
+    margin-top:80px;
+
+}
+
+
+
+@media(max-width:900px){
+
+.bracket-container{
+
+    justify-content:flex-start;
+
+}
+
+}
