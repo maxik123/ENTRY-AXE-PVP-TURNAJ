@@ -2,9 +2,7 @@
 
 
 *{
-
 box-sizing:border-box;
-
 }
 
 
@@ -14,7 +12,7 @@ body{
 margin:0;
 
 background:
-radial-gradient(circle at top,#202020,#050505 70%);
+radial-gradient(circle at top,#222,#050505 70%);
 
 color:white;
 
@@ -24,9 +22,6 @@ font-family:'Montserrat',sans-serif;
 
 
 
-
-
-/* HEADER */
 
 
 .hero{
@@ -43,8 +38,7 @@ padding:50px 20px;
 
 width:170px;
 
-filter:
-drop-shadow(0 0 20px white);
+filter:drop-shadow(0 0 20px white);
 
 }
 
@@ -56,9 +50,9 @@ font-size:48px;
 
 letter-spacing:3px;
 
-font-weight:800;
-
 }
+
+
 
 
 
@@ -69,7 +63,6 @@ color:#aaa;
 font-size:20px;
 
 }
-
 
 
 
@@ -94,34 +87,46 @@ margin:50px auto;
 
 font-size:32px;
 
-margin-bottom:40px;
-
 }
+
 
 
 
 
 .leaderboard-top{
 
+
 display:flex;
+
+
+flex-direction:row;
+
 
 justify-content:center;
 
+
 align-items:flex-end;
+
 
 gap:35px;
 
-flex-wrap:wrap;
+
+width:100%;
+
+
+flex-wrap:nowrap;
+
 
 }
 
 
 
 
-
 .top-place{
 
+
 width:230px;
+
 
 background:
 linear-gradient(145deg,#151515,#080808);
@@ -129,18 +134,22 @@ linear-gradient(145deg,#151515,#080808);
 
 border:1px solid #333;
 
+
 border-radius:20px;
 
 
 padding:25px;
 
 
-box-shadow:
+text-align:center;
 
+
+box-shadow:
 0 15px 40px rgba(0,0,0,.7);
 
 
 transition:.3s;
+
 
 }
 
@@ -158,6 +167,7 @@ border-color:white;
 
 
 
+
 .top-place img{
 
 height:150px;
@@ -167,12 +177,9 @@ height:150px;
 
 
 
-
 .top-place h3{
 
 font-size:22px;
-
-margin:15px 0;
 
 }
 
@@ -189,14 +196,15 @@ font-size:35px;
 
 
 
-/* PRVNÍ MÍSTO */
-
 
 .first{
 
+
 transform:translateY(-30px);
 
+
 border-color:#facc15;
+
 
 }
 
@@ -204,7 +212,7 @@ border-color:#facc15;
 
 .first img{
 
-height:190px;
+height:200px;
 
 }
 
@@ -215,7 +223,6 @@ height:190px;
 transform:translateY(-40px);
 
 }
-
 
 
 
@@ -237,34 +244,37 @@ text-align:center;
 
 #players{
 
+
 max-width:1200px;
+
 
 margin:auto;
 
 
 display:grid;
 
-grid-template-columns:
 
+grid-template-columns:
 repeat(auto-fit,minmax(250px,1fr));
 
 
 gap:20px;
+
 
 }
 
 
 
 
-
 .player-card{
 
-background:
 
+background:
 linear-gradient(145deg,#151515,#080808);
 
 
 border:1px solid #333;
+
 
 border-radius:15px;
 
@@ -274,23 +284,12 @@ padding:20px;
 
 display:flex;
 
+
 align-items:center;
+
 
 gap:20px;
 
-
-transition:.3s;
-
-}
-
-
-
-
-.player-card:hover{
-
-transform:translateY(-5px);
-
-border-color:white;
 
 }
 
@@ -308,8 +307,6 @@ height:80px;
 
 
 
-
-
 .player-card h3{
 
 margin:0 0 10px;
@@ -321,25 +318,28 @@ margin:0 0 10px;
 
 
 
-
 /* RANKY */
 
 
 .rank{
 
+
 display:inline-block;
+
 
 padding:6px 14px;
 
+
 border-radius:8px;
+
 
 font-weight:800;
 
+
 font-size:13px;
 
+
 }
-
-
 
 
 
@@ -350,7 +350,6 @@ background:#facc15;
 color:black;
 
 }
-
 
 
 .HT2{
@@ -388,16 +387,14 @@ background:#555;
 
 
 
-
 @media(max-width:700px){
 
 
-.hero h1{
+.leaderboard-top{
 
-font-size:32px;
+flex-wrap:wrap;
 
 }
-
 
 
 .first{
@@ -407,9 +404,9 @@ transform:none;
 }
 
 
-.first:hover{
+.hero h1{
 
-transform:translateY(-10px);
+font-size:32px;
 
 }
 
