@@ -206,6 +206,21 @@ const players = [
             discord:""
         }
     },
+    {
+        name:"Zelvaa",
+        rank:"LT2",
+        description:"",
+        upcoming:[
+            "",
+            ""
+        ],
+        socials:{
+            youtube:"",
+            twitch:"",
+            tiktok:"",
+            discord:""
+        }
+    },
     // ===== HT3 =====
 
     {
@@ -502,20 +517,6 @@ const players = [
             discord:""
         }
     },
- {
-        name:"?",
-        rank:"LT3",
-        description:"",
-        upcoming:[
-            ""
-        ],
-        socials:{
-            youtube:"",
-            twitch:"",
-            tiktok:"",
-            discord:""
-        }
-    }
 
 ];
 
