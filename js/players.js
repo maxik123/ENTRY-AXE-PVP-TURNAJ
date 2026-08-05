@@ -5,7 +5,7 @@ const players = [
     {
         name:"MINER99",
         rank:"LT1",
-        description:"",
+        description:"pridal bych tipovacku",
         upcoming:[
             "rnd0",
             "",
@@ -13,7 +13,7 @@ const players = [
         ],
         socials:{
             youtube:"https://youtube.com/@miner99?si=FnC7AGQAdDHFlMcl",
-            twitch:"",
+            tiktok:"https://www.tiktok.com/@miner99wasalreadytaken?_r=1&_t=ZN-98cl2DI7tjC",
             instagram:"https://www.instagram.com/miner99cz?igsh=MzlqbWo1MHBobHdx&utm_source=qr",
             discord:"https://discord.gg/DCvapNsQY"
             
