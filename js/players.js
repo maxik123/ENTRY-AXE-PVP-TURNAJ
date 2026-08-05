@@ -3,17 +3,17 @@ const players = [
     // ===== LT1 =====
 
     {
-        name:"_Lukyng",
-        rank:"LT1"
-    },
-
-    {
         name:"MINER99",
         rank:"LT1"
     },
 
     {
         name:"kufrajzcz",
+        rank:"LT1"
+    },
+
+    {
+        name:"_Lukyng",
         rank:"LT1"
     },
 
