@@ -65,8 +65,8 @@ const players = [
             ""
         ],
         socials:{
-            youtube:"",
-            twitch:"",
+            instagram:"https://www.instagram.com/ze1ro00/",
+            twitch:"https://www.twitch.tv/ze1ro00",
             tiktok:"",
             discord:""
         }
@@ -209,14 +209,14 @@ const players = [
     {
         name:"Zelvaa",
         rank:"LT2",
-        description:"",
+        description:"Věnuju se MC pvp přes 4+ roků.",
         upcoming:[
             "",
             ""
         ],
         socials:{
             youtube:"",
-            twitch:"",
+            instagram:"https://www.instagram.com/zeen_the_dog/",
             tiktok:"",
             discord:""
         }
