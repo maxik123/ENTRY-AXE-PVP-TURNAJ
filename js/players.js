@@ -79,12 +79,7 @@ const players = [
         name:"Kyokutan_",
         rank:"HT3"
     },
-
-    {
-        name:"fiflip",
-        rank:"HT3"
-    },
-
+    
     {
         name:"MajorDTJ",
         rank:"HT3"
