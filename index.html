@@ -14,145 +14,367 @@
 
 </head>
 
+
 <body>
+
 
 <header class="hero">
 
+
     <img src="./img/logo.png" class="logo" alt="Logo">
 
-    <h1>ENTRYHO AXEPVP TURNAJ</h1>
 
-    <p>Turnaj nejlepších Axe PvP hráčů CZ/SK!</p>
+    <h1>
+        ENTRYHO AXEPVP TURNAJ
+    </h1>
+
+
+    <p>
+        Turnaj nejlepších Axe PvP hráčů CZ/SK!
+    </p>
+
+
 
     <div class="buttons">
+
 
         <a href="./bracket.html" class="main-button">
             PAVOUK TURNAJE
         </a>
 
-        <a href="https://discord.gg/EdBNbz69KV" class="discord-button" target="_blank">
+
+        <a href="https://discord.gg/EdBNbz69KV"
+           class="discord-button"
+           target="_blank">
+
             DISCORD TURNAJE
+
         </a>
 
-        <a href="https://www.youtube.com/@Entry14" class="youtube-button" target="_blank">
+
+
+        <a href="https://www.youtube.com/@Entry14"
+           class="youtube-button"
+           target="_blank">
+
             SLEDUJ TURNAJ LIVE
+
         </a>
+
 
     </div>
+
 
 </header>
 
+
+
+
+
 <section class="top-section">
 
-    <h2>TOP 3 HRÁČI</h2>
 
-    <div class="leaderboard-top">
+<h2>
+TOP 3 HRÁČI
+</h2>
 
-        <div class="top-place second">
 
-            <div class="place">🥈</div>
 
-            <img src="https://mc-heads.net/body/xlmk">
+<div class="leaderboard-top">
 
-            <h3>Čeká se</h3>
 
-            <span class="rank LT3">?</span>
 
-        </div>
+<div class="top-place second">
 
-        <div class="top-place first">
 
-            <div class="place">🥇</div>
+<div class="place">
+🥈
+</div>
 
-            <img src="https://mc-heads.net/body/xlmk">
 
-            <h3>Čeká se</h3>
+<img src="https://mc-heads.net/body/xlmk">
 
-            <span class="rank LT3">?</span>
 
-        </div>
+<h3>
+Čeká se
+</h3>
 
-        <div class="top-place third">
 
-            <div class="place">🥉</div>
+<span class="rank LT3">
+?
+</span>
 
-            <img src="https://mc-heads.net/body/xlmk">
 
-            <h3>Čeká se</h3>
+</div>
 
-            <span class="rank LT3">?</span>
 
-        </div>
 
-    </div>
+
+
+<div class="top-place first">
+
+
+<div class="place">
+🥇
+</div>
+
+
+<img src="https://mc-heads.net/body/xlmk">
+
+
+<h3>
+Čeká se
+</h3>
+
+
+<span class="rank LT3">
+?
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="top-place third">
+
+
+<div class="place">
+🥉
+</div>
+
+
+<img src="https://mc-heads.net/body/xlmk">
+
+
+<h3>
+Čeká se
+</h3>
+
+
+<span class="rank LT3">
+?
+</span>
+
+
+</div>
+
+
+
+</div>
+
 
 </section>
+
+
+
+
+
+
+
+
+
+<!-- =======================================
+            AXE PREDICTIONS
+======================================== -->
+
+
+<section class="predictions-section">
+
+
+<h2>
+ COMMUNITY PREDICTIONS
+</h2>
+
+
+<p class="prediction-info">
+
+Hlasuj, kdo podle tebe vyhraje!
+
+</p>
+
+
+
+<div id="predictions"></div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =======================================
+            PLAYERS
+======================================== -->
+
 
 <section class="players-section">
 
-    <h2> VŠICHNI HRÁČI</h2>
 
-    <div id="players"></div>
+<h2>
+VŠICHNI HRÁČI
+</h2>
+
+
+
+<div id="players"></div>
+
+
 
 </section>
+
+
+
+
+
+
+
+
 
 <!-- =======================================
             PLAYER PROFILE POPUP
 ======================================== -->
 
+
+
 <div id="playerModal" class="player-modal">
 
-    <div class="player-modal-content">
 
-        <button id="closeModal" class="close-modal">
-            ✕
-        </button>
 
-        <img
-            id="modalSkin"
-            class="modal-skin"
-            src=""
-            alt="Skin">
+<div class="player-modal-content">
 
-        <h2 id="modalName">
-            Hráč
-        </h2>
 
-        <span id="modalRank" class="rank">
-            LT1
-        </span>
 
-        <div class="modal-section">
+<button id="closeModal" class="close-modal">
 
-            <h3>O hráči</h3>
+✕
 
-            <p id="modalDescription">
-                Popis hráče...
-            </p>
+</button>
 
-        </div>
 
-        <div class="modal-section">
 
-            <h3> Nadcházející zápasy</h3>
 
-            <ul id="modalMatches"></ul>
 
-        </div>
+<img
+id="modalSkin"
+class="modal-skin"
+src=""
+alt="Skin">
 
-        <div class="modal-section">
 
-            <h3> Sociální sítě</h3>
 
-            <div id="modalSocials" class="social-links"></div>
 
-        </div>
 
-    </div>
+<h2 id="modalName">
+
+Hráč
+
+</h2>
+
+
+
+
+
+<span id="modalRank" class="rank">
+
+LT1
+
+</span>
+
+
+
+
+
+
+
+<div class="modal-section">
+
+
+<h3>
+O hráči
+</h3>
+
+
+<p id="modalDescription">
+
+Popis hráče...
+
+</p>
+
 
 </div>
 
+
+
+
+
+
+
+<div class="modal-section">
+
+
+<h3>
+Nadcházející zápasy
+</h3>
+
+
+<ul id="modalMatches"></ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="modal-section">
+
+
+<h3>
+Sociální sítě
+</h3>
+
+
+
+<div id="modalSocials" class="social-links"></div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
 <script src="./js/players.js?v=4"></script>
+
+<script src="./js/predictions.js?v=1"></script>
+
+
 
 </body>
 
