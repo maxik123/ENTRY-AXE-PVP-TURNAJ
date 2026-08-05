@@ -5,7 +5,7 @@ const players = [
     {
         name:"MINER99",
         rank:"LT1",
-        description:"",
+        description:"Jeden z favoritů turnaje. Silný Axe PvP hráč s agresivním stylem.",
         upcoming:[
             "rnd0",
             "",
@@ -22,7 +22,7 @@ const players = [
     {
         name:"kufrajzcz",
         rank:"LT1",
-        description:"",
+        description:"Currently Ten Nejlepší hráč CZSK",
         upcoming:[
             "",
             ""
@@ -76,7 +76,7 @@ const players = [
     {
         name:"caisem",
         rank:"HT2",
-        description:"",
+        description:"Druhý Nejlepší Hráč CZSK",
         upcoming:[
             "",
             ""
@@ -128,7 +128,7 @@ const players = [
     {
         name:"Fleyz",
         rank:"LT2",
-        description:"",
+        description:"Majitel CZSK TIERLISTU",
         upcoming:[
             "",
             ""
@@ -460,16 +460,16 @@ const players = [
     {
         name:"Nojmisek",
         rank:"LT3",
-        description:"",
+        description:"Jestli bratr vypl wifinu, vypni bratra - Nojmisek",
         upcoming:[
             "",
             ""
         ],
         socials:{
             youtube:"",
-            twitch:"",
-            tiktok:"",
-            discord:""
+            twitch:"https://twitch.tv/nojmiseek",
+            instagram:"https://www.instagram.com/feellikenojmi?igsh=emN5ODRva3YxeGgx&utm_source=qr",
+            discord:"https://discord.gg/cEgwn2E6J2"
         }
     },
     {
@@ -654,11 +654,11 @@ socials.innerHTML += `
 }
 
 
-if(player.socials.tiktok){
+if(player.socials.instagram){
 
 socials.innerHTML += `
-<a href="${player.socials.tiktok}" target="_blank">
- TikTok
+<a href="${player.socials.instagram}" target="_blank">
+ Instagram
 </a>
 `;
 
@@ -668,8 +668,8 @@ socials.innerHTML += `
 if(player.socials.discord){
 
 socials.innerHTML += `
-<a>
- ${player.socials.discord}
+<a href="${player.socials.discord}" target="_blank">
+ Discord
 </a>
 `;
 
