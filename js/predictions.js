@@ -33,6 +33,10 @@ const matches = [
 
 
 
+
+
+
+
 // =======================================
 //        LOAD PREDICTIONS
 // =======================================
@@ -49,11 +53,11 @@ function loadPredictions(){
 
 
 
-    container.innerHTML="";
+    container.innerHTML = "";
 
 
 
-    matches.forEach(match=>{
+    matches.forEach(match => {
 
 
 
@@ -62,13 +66,20 @@ function loadPredictions(){
             localStorage.getItem(match.id)
         )
         ||
-        {
+        {};
 
-            [match.player1]:0,
 
-            [match.player2]:0
 
-        };
+        // vytvoření hodnot pokud neexistují
+
+        votes[match.player1] =
+        Number(votes[match.player1] || 0);
+
+
+
+        votes[match.player2] =
+        Number(votes[match.player2] || 0);
+
 
 
 
@@ -82,14 +93,17 @@ function loadPredictions(){
 
 
 
-        let player1Percent =
-        total > 0
-        ?
-        Math.round(
-            votes[match.player1] / total * 100
-        )
-        :
-        0;
+        let player1Percent = 0;
+
+
+        if(total > 0){
+
+            player1Percent =
+            Math.round(
+                votes[match.player1] / total * 100
+            );
+
+        }
 
 
 
@@ -98,7 +112,7 @@ function loadPredictions(){
         let player2Percent =
         total > 0
         ?
-        100-player1Percent
+        100 - player1Percent
         :
         0;
 
@@ -118,13 +132,14 @@ function loadPredictions(){
 
             <h3>
 
-            ${match.player1}
+                ${match.player1}
 
-            ⚔️
+                ⚔️
 
-            ${match.player2}
+                ${match.player2}
 
             </h3>
+
 
 
 
@@ -137,7 +152,7 @@ function loadPredictions(){
 
                 <button onclick="vote('${match.id}','${match.player1}')">
 
-                ${match.player1}
+                    ${match.player1}
 
                 </button>
 
@@ -147,7 +162,7 @@ function loadPredictions(){
 
                 <button onclick="vote('${match.id}','${match.player2}')">
 
-                ${match.player2}
+                    ${match.player2}
 
                 </button>
 
@@ -165,15 +180,13 @@ function loadPredictions(){
             <div class="prediction-bar">
 
 
-
                 <div class="prediction-bar-left"
 
                 style="width:${player1Percent}%">
 
-                ${player1Percent}%
+                    ${player1Percent}%
 
                 </div>
-
 
 
             </div>
@@ -184,21 +197,23 @@ function loadPredictions(){
 
 
 
+
             <p class="prediction-result">
 
-            ${match.player1}: ${player1Percent}%
+
+                ${match.player1}: ${player1Percent}%
 
 
-            <br>
+                <br>
 
 
-            ${match.player2}: ${player2Percent}%
+                ${match.player2}: ${player2Percent}%
 
 
-            <br><br>
+                <br><br>
 
 
-             ${total} hlasů
+                👥 ${total} hlasů
 
 
             </p>
@@ -249,13 +264,37 @@ function vote(id,player){
 
 
         alert(
-        "Už jsi hlasoval v tomto zápase!"
+            "Už jsi hlasoval v tomto zápase!"
         );
 
 
         return;
 
     }
+
+
+
+
+
+
+
+    let match =
+    matches.find(
+        m => m.id === id
+    );
+
+
+
+    if(!match){
+
+        console.error(
+            "Zápas nenalezen"
+        );
+
+        return;
+
+    }
+
 
 
 
@@ -272,8 +311,25 @@ function vote(id,player){
 
 
 
-    votes[player] =
-    (votes[player] || 0) + 1;
+
+    votes[match.player1] =
+    Number(votes[match.player1] || 0);
+
+
+
+    votes[match.player2] =
+    Number(votes[match.player2] || 0);
+
+
+
+
+
+
+
+    votes[player]++;
+
+
+
 
 
 
@@ -291,13 +347,18 @@ function vote(id,player){
 
 
 
+
+
+
     localStorage.setItem(
 
         "voted_" + id,
 
-        true
+        "true"
 
     );
+
+
 
 
 
@@ -308,6 +369,8 @@ function vote(id,player){
 
 
 }
+
+
 
 
 
