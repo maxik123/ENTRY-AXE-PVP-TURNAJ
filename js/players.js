@@ -675,6 +675,16 @@ socials.innerHTML += `
 
 }
 
+    
+if(player.socials.tiktok){
+
+socials.innerHTML += `
+<a href="${player.socials.tiktok}" target="_blank">
+ Discord
+</a>
+`;
+
+}
 
 
 document
