@@ -186,7 +186,6 @@ ${match.player2}
 
 style="width:${percent}%">
 
-${percent}%
 
 </div>
 
