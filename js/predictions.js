@@ -40,8 +40,12 @@ const matches = [
         id:"xdanicz-jangche",
         player1:"xDaniCz",
         player2:"Jangche"
+    },
+    {
+        id:"nojmisek-zelvaa",
+        player1:"Zelvaa",
+        player2:"Nojmisek"
     }
-
 
 ];
 
