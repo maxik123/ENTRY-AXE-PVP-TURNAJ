@@ -146,7 +146,7 @@ id="${match.id}">
 
 ${match.player1}
 
-⚔️
+VS
 
 ${match.player2}
 
