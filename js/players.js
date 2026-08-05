@@ -22,16 +22,16 @@ const players = [
     {
         name:"kufrajzcz",
         rank:"LT1",
-        description:"",
+        description:"Nejlepší CZSK Hráč",
         upcoming:[
             "",
             ""
         ],
         socials:{
-            youtube:"",
+            youtube:"https://www.youtube.com/@kufrajz",
             twitch:"",
-            tiktok:"",
-            discord:""
+            instagram:"https://www.instagram.com/kufrajz/",
+            discord:"https://discord.gg/p9BJbtUqmg"
         }
     },
 
