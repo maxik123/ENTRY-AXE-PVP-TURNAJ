@@ -27,15 +27,15 @@
     <div class="buttons">
 
         <a href="./bracket.html" class="main-button">
-             PAVOUK TURNAJE
+            PAVOUK TURNAJE
         </a>
 
         <a href="https://discord.gg/EdBNbz69KV" class="discord-button" target="_blank">
-             DISCORD TURNAJE
+            DISCORD TURNAJE
         </a>
 
         <a href="https://www.youtube.com/@Entry14" class="youtube-button" target="_blank">
-             SLEDUJ TURNAJ LIVE 
+            SLEDUJ TURNAJ LIVE
         </a>
 
     </div>
@@ -44,55 +44,43 @@
 
 <section class="top-section">
 
-    <h2> TOP 3 HRÁČI</h2>
+    <h2>TOP 3 HRÁČI</h2>
 
     <div class="leaderboard-top">
 
         <div class="top-place second">
 
-            <div class="place">
-                🥈
-            </div>
+            <div class="place">🥈</div>
 
             <img src="https://mc-heads.net/body/xlmk">
 
             <h3>Čeká se</h3>
 
-            <span class="rank LT3">
-                ?
-            </span>
+            <span class="rank LT3">?</span>
 
         </div>
 
         <div class="top-place first">
 
-            <div class="place">
-                🥇
-            </div>
+            <div class="place">🥇</div>
 
             <img src="https://mc-heads.net/body/xlmk">
 
             <h3>Čeká se</h3>
 
-            <span class="rank LT3">
-                ?
-            </span>
+            <span class="rank LT3">?</span>
 
         </div>
 
         <div class="top-place third">
 
-            <div class="place">
-                🥉
-            </div>
+            <div class="place">🥉</div>
 
             <img src="https://mc-heads.net/body/xlmk">
 
             <h3>Čeká se</h3>
 
-            <span class="rank LT3">
-                ?
-            </span>
+            <span class="rank LT3">?</span>
 
         </div>
 
@@ -108,7 +96,64 @@
 
 </section>
 
-<script src="./js/players.js?v=3"></script>
+<!-- =======================================
+            PLAYER PROFILE POPUP
+======================================== -->
+
+<div id="playerModal" class="player-modal">
+
+    <div class="player-modal-content">
+
+        <button id="closeModal" class="close-modal">
+            ✕
+        </button>
+
+        <img
+            id="modalSkin"
+            class="modal-skin"
+            src=""
+            alt="Skin">
+
+        <h2 id="modalName">
+            Hráč
+        </h2>
+
+        <span id="modalRank" class="rank">
+            LT1
+        </span>
+
+        <div class="modal-section">
+
+            <h3>O hráči</h3>
+
+            <p id="modalDescription">
+                Popis hráče...
+            </p>
+
+        </div>
+
+        <div class="modal-section">
+
+            <h3> Nadcházející zápasy</h3>
+
+            <ul id="modalMatches"></ul>
+
+        </div>
+
+        <div class="modal-section">
+
+            <h3> Sociální sítě</h3>
+
+            <div id="modalSocials" class="social-links"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./js/players.js?v=4"></script>
 
 </body>
+
 </html>
