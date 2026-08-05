@@ -1,4 +1,3 @@
-<script type="module" src="./js/predictions.js?v=2"></script>
 <!doctype html>
 <html lang="cs">
 
@@ -371,49 +370,31 @@ Sociální sítě
 
 
 
+
+
+
+
+
+
+
 <script src="./js/players.js?v=4"></script>
 
-<script src="./js/predictions.js?v=1"></script>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+const firebaseConfig={
+apiKey:"AIzaSyBvrJ3cNxikRlY9jk5_LVXTjQuCcEGv-_0",
+authDomain:"entry-axe-turnaj-425df.firebaseapp.com",
+projectId:"entry-axe-turnaj-425df",
+storageBucket:"entry-axe-turnaj-425df.firebasestorage.app",
+messagingSenderId:"345574568549",
+appId:"1:345574568549:web:81b4ef63b60196bdfe4c8c"
+};
+window.db=getFirestore(initializeApp(firebaseConfig));
+</script>
 
-
+<script type="module" src="./js/predictions.js?v=2"></script>
 
 </body>
 
 </html>
-<script type="module">
-
-import { initializeApp } 
-from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
-
-import { getFirestore } 
-from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
-
-
-const firebaseConfig = {
-
-apiKey: "AIzaSyBvrJ3cNxikRlY9jk5_LVXTjQuCcEGv-_0",
-
-authDomain: "entry-axe-turnaj-425df.firebaseapp.com",
-
-projectId: "entry-axe-turnaj-425df",
-
-storageBucket: "entry-axe-turnaj-425df.firebasestorage.app",
-
-messagingSenderId: "345574568549",
-
-appId: "1:345574568549:web:81b4ef63b60196bdfe4c8c"
-
-};
-
-
-
-const app = initializeApp(firebaseConfig);
-
-
-window.db = getFirestore(app);
-
-
-</script>
-
-
-<script src="./js/predictions.js?v=2"></script>
