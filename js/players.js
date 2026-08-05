@@ -12,10 +12,11 @@ const players = [
             ""
         ],
         socials:{
-            youtube:"",
+            youtube:"https://youtube.com/@miner99?si=FnC7AGQAdDHFlMcl",
             twitch:"",
             tiktok:"",
-            discord:""
+            discord:"https://discord.gg/DCvapNsQY"
+            instagram:"https://www.instagram.com/miner99cz?igsh=MzlqbWo1MHBobHdx&utm_source=qr"
         }
     },
 
