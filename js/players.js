@@ -39,14 +39,14 @@ const players = [
     {
         name:"_Lukyng",
         rank:"LT1",
-        description:"",
+        description:"LukyG",
         upcoming:[
             "",
             ""
         ],
         socials:{
-            youtube:"",
-            twitch:"",
+            youtube:"https://www.youtube.com/@Lukyngcz",
+            instagram:"https://www.instagram.com/lukynng/",
             tiktok:"",
             discord:""
         }
@@ -339,13 +339,13 @@ const players = [
 {
         name:"Drticka",
         rank:"LT3",
-        description:"",
+        description:"Mám rád slepice",
         upcoming:[
             "",
             ""
         ],
         socials:{
-            youtube:"",
+            youtube:"https://youtube.com/@drticka?si=nOqBpwrf-s5Akwe3",
             twitch:"",
             tiktok:"",
             discord:""
