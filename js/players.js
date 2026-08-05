@@ -14,9 +14,10 @@ const players = [
         socials:{
             youtube:"https://youtube.com/@miner99?si=FnC7AGQAdDHFlMcl",
             twitch:"",
-            tiktok:"",
+            instagram:"https://www.instagram.com/miner99cz?igsh=MzlqbWo1MHBobHdx&utm_source=qr",
             discord:"https://discord.gg/DCvapNsQY"
-            instagram:"https://www.instagram.com/miner99cz?igsh=MzlqbWo1MHBobHdx&utm_source=qr"
+            
+            
         }
     },
 
@@ -33,6 +34,7 @@ const players = [
             twitch:"",
             instagram:"https://www.instagram.com/kufrajz/",
             discord:"https://discord.gg/p9BJbtUqmg"
+            
         }
     },
 
@@ -653,8 +655,6 @@ socials.innerHTML += `
 `;
 
 }
-
-
 if(player.socials.instagram){
 
 socials.innerHTML += `
@@ -662,6 +662,10 @@ socials.innerHTML += `
  Instagram
 </a>
 `;
+
+}
+
+
 
 }
 
@@ -681,7 +685,7 @@ if(player.socials.tiktok){
 
 socials.innerHTML += `
 <a href="${player.socials.tiktok}" target="_blank">
- Discord
+ Tiktok
 </a>
 `;
 
