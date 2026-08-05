@@ -5,7 +5,7 @@ const players = [
     {
         name:"MINER99",
         rank:"LT1",
-        description:"pridal bych tipovacku",
+        description:"Přidal bych tipovačku",
         upcoming:[
             "rnd0",
             "",
@@ -13,11 +13,9 @@ const players = [
         ],
         socials:{
             youtube:"https://youtube.com/@miner99?si=FnC7AGQAdDHFlMcl",
-            tiktok:"https://www.tiktok.com/@miner99wasalreadytaken?_r=1&_t=ZN-98cl2DI7tjC",
             instagram:"https://www.instagram.com/miner99cz?igsh=MzlqbWo1MHBobHdx&utm_source=qr",
+            tiktok:"https://www.tiktok.com/@miner99wasalreadytaken?_r=1&_t=ZN-98cl2DI7tjC",
             discord:"https://discord.gg/DCvapNsQY"
-            
-            
         }
     },
 
@@ -31,10 +29,9 @@ const players = [
         ],
         socials:{
             youtube:"https://www.youtube.com/@kufrajz",
-            twitch:"",
             instagram:"https://www.instagram.com/kufrajz/",
+            tiktok:"",
             discord:"https://discord.gg/p9BJbtUqmg"
-            
         }
     },
 
@@ -79,7 +76,7 @@ const players = [
     {
         name:"caisem",
         rank:"HT2",
-        description:"",
+        description:"Druhý Nejlepší Hráč CZSK",
         upcoming:[
             "",
             ""
@@ -131,7 +128,7 @@ const players = [
     {
         name:"Fleyz",
         rank:"LT2",
-        description:"",
+        description:"Majitel CZSK TIERLISTU",
         upcoming:[
             "",
             ""
@@ -387,7 +384,7 @@ const players = [
     },
     {
         name:"Niconko2",
-        rank:"LT3",
+        rank:"HT2",
         description:"",
         upcoming:[
             "",
@@ -655,6 +652,8 @@ socials.innerHTML += `
 `;
 
 }
+
+
 if(player.socials.instagram){
 
 socials.innerHTML += `
@@ -662,10 +661,6 @@ socials.innerHTML += `
  Instagram
 </a>
 `;
-
-}
-
-
 
 }
 
@@ -680,16 +675,6 @@ socials.innerHTML += `
 
 }
 
-    
-if(player.socials.tiktok){
-
-socials.innerHTML += `
-<a href="${player.socials.tiktok}" target="_blank">
- Tiktok
-</a>
-`;
-
-}
 
 
 document
