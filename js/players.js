@@ -399,7 +399,7 @@ const players = [
     },
     {
         name:"Niconko2",
-        rank:"HT2",
+        rank:"LT3",
         description:"",
         upcoming:[
             "",
