@@ -568,7 +568,7 @@ ${player.rank}
 // ==========================
 
 
-function openPlayer(index){
+window.openPlayer = function(index){
 
 
 const player = players[index];
