@@ -5,7 +5,7 @@ const players = [
     {
         name:"MINER99",
         rank:"LT1",
-        description:"Jeden z favoritů turnaje. Silný Axe PvP hráč s agresivním stylem.",
+        description:"",
         upcoming:[
             "rnd0",
             "",
@@ -22,7 +22,7 @@ const players = [
     {
         name:"kufrajzcz",
         rank:"LT1",
-        description:"Currently Ten Nejlepší hráč CZSK",
+        description:"",
         upcoming:[
             "",
             ""
@@ -76,7 +76,7 @@ const players = [
     {
         name:"caisem",
         rank:"HT2",
-        description:"Druhý Nejlepší Hráč CZSK",
+        description:"",
         upcoming:[
             "",
             ""
@@ -128,7 +128,7 @@ const players = [
     {
         name:"Fleyz",
         rank:"LT2",
-        description:"Majitel CZSK TIERLISTU",
+        description:"",
         upcoming:[
             "",
             ""
