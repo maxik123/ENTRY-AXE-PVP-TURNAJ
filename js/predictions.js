@@ -209,7 +209,7 @@ ${match.player2}: ${percent2}%
 <br><br>
 
 
-👥 ${total} hlasů
+ ${total} hlasů
 
 
 </p>
