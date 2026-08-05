@@ -134,7 +134,7 @@ const players = [
     },
 
     {
-        name:"rndo",
+        name:"rnd0",
         rank:"LT3"
     },
 
