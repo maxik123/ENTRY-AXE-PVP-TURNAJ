@@ -12,7 +12,7 @@ const players = [
             ""
         ],
         socials:{
-            youtube:"https://www.youtube.com/@Entry14",
+            youtube:"",
             twitch:"",
             tiktok:"",
             discord:""
@@ -22,10 +22,10 @@ const players = [
     {
         name:"kufrajzcz",
         rank:"LT1",
-        description:"Zkušený hráč, který patří mezi nejlepší hráče turnaje.",
+        description:"Currently Ten Nejlepší hráč CZSK",
         upcoming:[
-            "Fleyz",
-            "Predator_18"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -39,10 +39,10 @@ const players = [
     {
         name:"_Lukyng",
         rank:"LT1",
-        description:"Jeden z hlavních favoritů Entryho AxePvP turnaje.",
+        description:"",
         upcoming:[
-            "caisem",
-            "Ze1ro00"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -59,10 +59,10 @@ const players = [
     {
         name:"Ze1ro00",
         rank:"HT2",
-        description:"Nebezpečný soupeř schopný porazit i hráče z vyšších tierů.",
+        description:"",
         upcoming:[
-            "_Lukyng",
-            "SievT"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -76,10 +76,10 @@ const players = [
     {
         name:"caisem",
         rank:"HT2",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"Druhý Nejlepší Hráč CZSK",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -92,10 +92,10 @@ const players = [
 {
         name:"M3gaBoy_",
         rank:"HT2",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -111,10 +111,10 @@ const players = [
     {
         name:"zeuxi",
         rank:"LT2",
-        description:"Stabilní hráč LT2 připravený bojovat o postup.",
+        description:"",
         upcoming:[
-            "Fleyz",
-            "SievT"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -128,10 +128,10 @@ const players = [
     {
         name:"Fleyz",
         rank:"LT2",
-        description:"Silný LT2 hráč s velkým potenciálem.",
+        description:"Majitel CZSK TIERLISTU",
         upcoming:[
-            "zeuxi",
-            "kufrajzcz"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -145,10 +145,10 @@ const players = [
     {
         name:"SievT",
         rank:"LT2",
-        description:"Jeden z nejznámějších hráčů CZ/SK Axe PvP scény.",
+        description:"",
         upcoming:[
-            "Ze1ro00",
-            "ZomBeeX"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -162,10 +162,10 @@ const players = [
     {
         name:"ZomBeeX",
         rank:"LT2",
-        description:"Nebezpečný soupeř LT2.",
+        description:"",
         upcoming:[
-            "SievT",
-            "TenSHouslema"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -178,10 +178,10 @@ const players = [
   {
         name:"TenSHouslema",
         rank:"LT2",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -194,10 +194,10 @@ const players = [
 {
         name:"qHenny",
         rank:"LT2",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -211,10 +211,10 @@ const players = [
     {
         name:"adams297",
         rank:"HT3",
-        description:"TEXT",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -227,9 +227,9 @@ const players = [
     {
         name:"Predator_18",
         rank:"HT3",
-        description:"Bojovník HT3 tieru.",
+        description:"",
         upcoming:[
-            "WBotWarrior7"
+            ""
         ],
         socials:{
             youtube:"",
@@ -243,9 +243,9 @@ const players = [
     {
         name:"Kyokutan_",
         rank:"HT3",
-        description:"Silný hráč připravený překvapit favority.",
+        description:"",
         upcoming:[
-            "MajorDTJ"
+            "Sajk3000"
         ],
         socials:{
             youtube:"",
@@ -258,10 +258,10 @@ const players = [
  {
         name:"MajorDTJ",
         rank:"HT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -274,10 +274,10 @@ const players = [
  {
         name:"ksd_argys",
         rank:"HT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -290,10 +290,10 @@ const players = [
 {
         name:"xDaniCz",
         rank:"HT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -306,10 +306,10 @@ const players = [
     {
         name:"Lukyk656",
         rank:"HT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -324,9 +324,9 @@ const players = [
     {
         name:"DarkHonzaCz",
         rank:"LT3",
-        description:"Účastník turnaje bojující o postup výše.",
+        description:"",
         upcoming:[
-            "Lukyng"
+            ""
         ],
         socials:{
             youtube:"",
@@ -339,10 +339,10 @@ const players = [
 {
         name:"Drticka",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -355,10 +355,10 @@ const players = [
     {
         name:"Pleistonax",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -370,10 +370,10 @@ const players = [
        {
         name:"Jangche",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -385,10 +385,10 @@ const players = [
     {
         name:"Niconko2",
         rank:"HT2",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -400,10 +400,10 @@ const players = [
     {
         name:"rnd0",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
             "MINER99",
-            "Zeuxi"
+            ""
         ],
         socials:{
             youtube:"",
@@ -415,10 +415,10 @@ const players = [
     {
         name:"Sajk3000",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "Kyokutan_",
+            ""
         ],
         socials:{
             youtube:"",
@@ -430,10 +430,10 @@ const players = [
     {
         name:"Tomas123456",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -445,10 +445,10 @@ const players = [
     {
         name:"Hungi_",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -460,10 +460,10 @@ const players = [
     {
         name:"Nojmisek",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -475,10 +475,10 @@ const players = [
     {
         name:"Ciesliik",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -490,10 +490,10 @@ const players = [
     {
         name:"WBotWarrior7",
         rank:"LT3",
-        description:"Technicky velmi dobrý hráč HT2.",
+        description:"",
         upcoming:[
-            "MINER99",
-            "Zeuxi"
+            "",
+            ""
         ],
         socials:{
             youtube:"",
@@ -505,9 +505,9 @@ const players = [
  {
         name:"?",
         rank:"LT3",
-        description:"Hráč LT3 tieru.",
+        description:"",
         upcoming:[
-            "Predator_18"
+            ""
         ],
         socials:{
             youtube:"",
