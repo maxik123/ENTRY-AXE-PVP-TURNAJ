@@ -28,7 +28,7 @@ const matches = [
         player2:"rnd0",
         date:"7. 8. 2026",
         time:"20:00",
-        stream:"https://youtube.com/@Entry14"
+        stream:"https://www.youtube.com/live/irE1Mar6jAw?si=ADTF3EpZGXJa3bGs"
     },
 
 
@@ -43,7 +43,7 @@ const matches = [
     {
         id:"xdanicz-jangche",
         player1:"xDaniCz",
-        player2:"Jangche",date:"?. ?. 2026",time:"19:00",stream:"https://youtube.com/@Entry14"
+        player2:"Jangche",date:"?. ?. 2026",time:"?",stream:"https://youtube.com/@Entry14"
     },
     {
         id:"nojmisek-zelvaa",
@@ -165,21 +165,33 @@ ${match.player2}
 
 <div class="prediction-buttons">
 
+    <div class="player-side">
 
-<button onclick="vote('${match.id}','${match.player1}')">
+        <img
+            class="player-head"
+            src="https://mc-heads.net/avatar/${match.player1}/64"
+            alt="${match.player1}"
+        >
 
-${match.player1}
+        <button onclick="vote('${match.id}','${match.player1}')">
+            ${match.player1}
+        </button>
 
-</button>
+    </div>
 
+    <div class="player-side">
 
-<button onclick="vote('${match.id}','${match.player2}')">
+        <button onclick="vote('${match.id}','${match.player2}')">
+            ${match.player2}
+        </button>
 
-${match.player2}
+        <img
+            class="player-head"
+            src="https://mc-heads.net/avatar/${match.player2}/64"
+            alt="${match.player2}"
+        >
 
-</button>
-
-
+    </div>
 
 </div>
 
@@ -199,7 +211,7 @@ style="width:${percent}%">
 
 
 </div>
-<div class="prediction-footer"><span> ${match.date} • ${match.time}</span><a class="watch-live" href="${match.stream}" target="_blank">▶ Sledovat živě</a></div>
+<div class="prediction-footer"><span>📅 ${match.date} • ${match.time}</span><a class="watch-live" href="${match.stream}" target="_blank">▶ Sledovat živě</a></div>
 <p class="prediction-result">
 
 ${match.player1}: ${percent}%
