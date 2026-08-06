@@ -199,7 +199,7 @@ style="width:${percent}%">
 
 
 </div>
-<div class="prediction-footer"><span>📅 ${match.date} • ${match.time}</span><a class="watch-live" href="${match.stream}" target="_blank">▶ Sledovat živě</a></div>
+<div class="prediction-footer"><span> ${match.date} • ${match.time}</span><a class="watch-live" href="${match.stream}" target="_blank">▶ Sledovat živě</a></div>
 <p class="prediction-result">
 
 ${match.player1}: ${percent}%
