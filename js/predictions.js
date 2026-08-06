@@ -36,14 +36,14 @@ const matches = [
         id:"kyokutan-sajk",
         player1:"Kyokutan_",
         player2:"Sajk3000",
-        date:"7. 8. 2026",time:"18:30",stream:"https://youtube.com/@Entry14"
+        date:"7. 8. 2026",time:"15:00",stream:"https://youtube.com/@Entry14"
     },
 
 
     {
         id:"xdanicz-jangche",
         player1:"xDaniCz",
-        player2:"Jangche",date:"9. 8. 2026",time:"19:00",stream:"https://youtube.com/@Entry14"
+        player2:"Jangche",date:"?. ?. 2026",time:"19:00",stream:"https://youtube.com/@Entry14"
     },
     {
         id:"nojmisek-zelvaa",
