@@ -25,26 +25,30 @@ const matches = [
     {
         id:"miner99-rnd0",
         player1:"MINER99",
-        player2:"rnd0"
+        player2:"rnd0",
+        date:"7. 8. 2026",
+        time:"20:00",
+        stream:"https://youtube.com/@Entry14"
     },
 
 
     {
         id:"kyokutan-sajk",
         player1:"Kyokutan_",
-        player2:"Sajk3000"
+        player2:"Sajk3000",
+        date:"7. 8. 2026",time:"18:30",stream:"https://youtube.com/@Entry14"
     },
 
 
     {
         id:"xdanicz-jangche",
         player1:"xDaniCz",
-        player2:"Jangche"
+        player2:"Jangche",date:"9. 8. 2026",time:"19:00",stream:"https://youtube.com/@Entry14"
     },
     {
         id:"nojmisek-zelvaa",
         player1:"Zelvaa",
-        player2:"Nojmisek"
+        player2:"Nojmisek",date:"7. 8. 2026",time:"19:00",stream:"https://youtube.com/@Entry14"
     }
 
 ];
@@ -195,10 +199,7 @@ style="width:${percent}%">
 
 
 </div>
-
-
-
-
+<div class="prediction-footer"><span>📅 ${match.date} • ${match.time}</span><a class="watch-live" href="${match.stream}" target="_blank">▶ Sledovat živě</a></div>
 <p class="prediction-result">
 
 ${match.player1}: ${percent}%
