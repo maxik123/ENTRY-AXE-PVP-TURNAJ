@@ -1578,3 +1578,26 @@ body {
 }
 
 .prediction-footer{display:flex;justify-content:space-between;align-items:center;margin:12px 0}.watch-live{background:#e53935;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
+.player-btn{display:flex;align-items:center;gap:8px}
+.player-btn.right{justify-content:flex-end}
+.player-head{width:42px;height:42px;border-radius:6px}
+
+.prediction-buttons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+}
+
+.player-side{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.player-head{
+    width:50px;
+    height:50px;
+    border-radius:8px;
+    image-rendering:pixelated;
+}
