@@ -1576,3 +1576,5 @@ body {
 
 
 }
+
+.prediction-footer{display:flex;justify-content:space-between;align-items:center;margin:12px 0}.watch-live{background:#e53935;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
