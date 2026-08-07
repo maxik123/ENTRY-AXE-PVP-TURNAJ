@@ -25,9 +25,9 @@ const matches = [
 
 
     {
-        id:"xdanicz-jangche",
+        id:"xdanicz-drticka",
         player1:"xDaniCz",
-        player2:"Jangche",date:"?. ?. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
+        player2:"Drticka",date:"?. ?. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
     },
 
 
