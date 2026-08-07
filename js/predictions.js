@@ -22,22 +22,6 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 const matches = [
 
 
-    {
-        id:"miner99-rnd0",
-        player1:"MINER99",
-        player2:"rnd0",
-        date:"7. 8. 2026",
-        time:"20:00",
-        stream:"https://www.youtube.com/live/rxXHjXghW0M"
-    },
-
-
-    {
-        id:"kyokutan-sajk",
-        player1:"Kyokutan_",
-        player2:"Sajk3000",
-        date:"7. 8. 2026",time:"15:00",stream:"https://www.youtube.com/live/irE1Mar6jAw?si=ADTF3EpZGXJa3bGs"
-    },
 
 
     {
@@ -45,11 +29,7 @@ const matches = [
         player1:"xDaniCz",
         player2:"Jangche",date:"?. ?. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
     },
-    {
-        id:"nojmisek-zelvaa",
-        player1:"Zelvaa",
-        player2:"Nojmisek",date:"7. 8. 2026",time:"19:00",stream:"https://www.youtube.com/live/HJc7dUnEEKo"
-    }
+
 
 ];
 
