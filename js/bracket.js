@@ -13,25 +13,24 @@
 // ============================================================
 
 const YOUTUBE = "https://www.youtube.com/@Entry14";
-
 const MATCHES = [
   {
     player1: "MINER99",
-    player2: "rnd0",
-    score1: null,
-    score2: null,
+    player2: "Hungi_",
+    score1: 20,
+    score2: 5,
     record: YOUTUBE
   },
   {
     player1: "Kyokutan_",
     player2: "Sajk3000",
-    score1: null,
-    score2: null,
+    score1: 20,
+    score2: 15,
     record: YOUTUBE
   },
   {
     player1: "xDaniCz",
-    player2: "Jangche",
+    player2: "Drticka",
     score1: null,
     score2: null,
     record: YOUTUBE
@@ -39,8 +38,8 @@ const MATCHES = [
   {
     player1: "Zelvaa",
     player2: "Nojmisek",
-    score1: null,
-    score2: null,
+    score1: 20,
+    score2: 2,
     record: YOUTUBE
   }
 ];
