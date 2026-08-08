@@ -12,6 +12,11 @@
 // další samostatný pavouk. Tento první se tím nerozbije.
 // ============================================================
 
+const MAJNR = "https://www.youtube.com/live/rxXHjXghW0M?si=fxL59SZGBRPW2JN1";
+const KYOKUTAN = "https://www.youtube.com/live/irE1Mar6jAw?si=-OTr4eEhJAhhUYCI";
+const ZELVAA = "https://www.youtube.com/live/HJc7dUnEEKo?si=jNPM6_yvvtZWzqhe";
+const YOUTUBE = "https://www.youtube.com/@Entry14";
+const YOUTUBE = "https://www.youtube.com/@Entry14";
 const YOUTUBE = "https://www.youtube.com/@Entry14";
 const MATCHES = [
   {
@@ -19,14 +24,14 @@ const MATCHES = [
     player2: "Hungi_",
     score1: 20,
     score2: 5,
-    record: YOUTUBE
+    record: MAJNR
   },
   {
     player1: "Kyokutan_",
     player2: "Sajk3000",
     score1: 20,
     score2: 15,
-    record: YOUTUBE
+    record: KYOKUTAN
   },
   {
     player1: "xDaniCz",
@@ -40,7 +45,7 @@ const MATCHES = [
     player2: "Nojmisek",
     score1: 20,
     score2: 2,
-    record: YOUTUBE
+    record: ZELVAA
   }
 ];
 
