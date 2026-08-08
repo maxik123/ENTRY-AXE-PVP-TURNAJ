@@ -17,21 +17,21 @@ const YOUTUBE = "https://www.youtube.com/@Entry14";
 const MATCHES = [
   {
     player1: "MINER99",
-    player2: "Hungi_",
-    score1: 20,
-    score2: 5,
+    player2: "rnd0",
+    score1: null,
+    score2: null,
     record: YOUTUBE
   },
   {
     player1: "Kyokutan_",
     player2: "Sajk3000",
-    score1: 20,
-    score2: 15,
+    score1: null,
+    score2: null,
     record: YOUTUBE
   },
   {
     player1: "xDaniCz",
-    player2: "Drticka",
+    player2: "Jangche",
     score1: null,
     score2: null,
     record: YOUTUBE
@@ -39,8 +39,8 @@ const MATCHES = [
   {
     player1: "Zelvaa",
     player2: "Nojmisek",
-    score1: 20,
-    score2: 2,
+    score1: null,
+    score2: null,
     record: YOUTUBE
   }
 ];
@@ -97,7 +97,7 @@ function matchBox(match, label) {
         </a>
 
         <div class="match-status">
-          ${w ? "✓ " + w + " POSTUPUJE" : ""}
+          ${w ? "✓ " + w + " POSTUPUJE" : "HRAJE SE DO 20"}
         </div>
       </div>
     </div>`;
@@ -150,7 +150,7 @@ function render() {
     <section class="bracket">
 
       <div class="round round1">
-        <div class="round-title"></div>
+        <div class="round-title">ČTVRTFINÁLE</div>
         ${matchBox(MATCHES[0], "ZÁPAS 1")}
         ${matchBox(MATCHES[1], "ZÁPAS 2")}
         ${matchBox(MATCHES[2], "ZÁPAS 3")}
@@ -158,17 +158,17 @@ function render() {
       </div>
 
       <div class="round round2">
-        <div class="round-title"></div>
-        ${matchBox(r2a, "")}
-        ${matchBox(r2b, "")}
+        <div class="round-title">SEMIFINÁLE</div>
+        ${matchBox(r2a, "SEMIFINÁLE 1")}
+        ${matchBox(r2b, "SEMIFINÁLE 2")}
       </div>
 
       <div class="round final-round">
-        <div class="round-title"></div>
-        ${matchBox(final, "")}
+        <div class="round-title">FINÁLE</div>
+        ${matchBox(final, "FINÁLE")}
 
         <div class="champion ${champion ? "active" : ""}">
-          <small></small>
+          <small>🏆 VÍTĚZ SKUPINY</small>
           <div>
             ${champion
               ? `<img src="${avatar(champion)}" alt=""><strong>${champion}</strong>`
