@@ -67,7 +67,7 @@ function playerRow(name, score) {
     return `
       <div class="player waiting">
         <div class="head empty">?</div>
-        <span>ČEKÁ</span>
+        <span>?</span>
         <strong>—</strong>
       </div>`;
   }
@@ -96,7 +96,7 @@ function matchBox(match, label) {
         </a>
 
         <div class="match-status">
-          ${w ? "✓ " + w + " POSTUPUJE" : "HRAJE SE DO 20"}
+          ${w ? " " + w + " POSTUPUJE" : ""}
         </div>
       </div>
     </div>`;
@@ -149,25 +149,25 @@ function render() {
     <section class="bracket">
 
       <div class="round round1">
-        <div class="round-title">ČTVRTFINÁLE</div>
-        ${matchBox(MATCHES[0], "ZÁPAS 1")}
-        ${matchBox(MATCHES[1], "ZÁPAS 2")}
-        ${matchBox(MATCHES[2], "ZÁPAS 3")}
-        ${matchBox(MATCHES[3], "ZÁPAS 4")}
+        <div class="round-title"></div>
+        ${matchBox(MATCHES[0], "")}
+        ${matchBox(MATCHES[1], "")}
+        ${matchBox(MATCHES[2], "")}
+        ${matchBox(MATCHES[3], "")}
       </div>
 
       <div class="round round2">
-        <div class="round-title">SEMIFINÁLE</div>
-        ${matchBox(r2a, "SEMIFINÁLE 1")}
-        ${matchBox(r2b, "SEMIFINÁLE 2")}
+        <div class="round-title"></div>
+        ${matchBox(r2a, "")}
+        ${matchBox(r2b, "")}
       </div>
 
       <div class="round final-round">
-        <div class="round-title">FINÁLE</div>
-        ${matchBox(final, "FINÁLE")}
+        <div class="round-title"></div>
+        ${matchBox(final, "")}
 
         <div class="champion ${champion ? "active" : ""}">
-          <small>🏆 VÍTĚZ SKUPINY</small>
+          <small> </small>
           <div>
             ${champion
               ? `<img src="${avatar(champion)}" alt=""><strong>${champion}</strong>`
