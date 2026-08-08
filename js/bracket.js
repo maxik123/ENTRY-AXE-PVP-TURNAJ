@@ -1,8 +1,8 @@
-```javascript
+
 // ============================================================
 // ENTRYHO AXEPVP - OPRAVDOVÝ PAVOUK
 // ============================================================
-// TADY MĚNÍŠ VÝSLEDKY A ODKAZY.
+// TADY MĚNÍŠ POUZE VÝSLEDKY A ODKAZY.
 //
 // 20:0 -> vyhrává hráč 1
 // 0:20 -> vyhrává hráč 2
@@ -14,17 +14,13 @@
 // ODKAZY NA ZÁZNAMY
 // ============================================================
 
-const MAJNR =
-    "https://www.youtube.com/live/rxXHjXghW0M?si=fxL59SZGBRPW2JN1";
+const MAJNR = "https://www.youtube.com/live/rxXHjXghW0M?si=fxL59SZGBRPW2JN1";
 
-const KYOKUTAN =
-    "https://www.youtube.com/live/irE1Mar6jAw?si=-OTr4eEhJAhhUYCI";
+const KYOKUTAN = "https://www.youtube.com/live/irE1Mar6jAw?si=-OTr4eEhJAhhUYCI";
 
-const ZELVAA =
-    "https://www.youtube.com/live/HJc7dUnEEKo?si=jNPM6_yvvtZWzqhe";
+const ZELVAA = "https://www.youtube.com/live/HJc7dUnEEKo?si=jNPM6_yvvtZWzqhe";
 
-const YOUTUBE =
-    "https://www.youtube.com/@Entry14";
+const YOUTUBE = "https://www.youtube.com/@Entry14";
 
 
 // ============================================================
@@ -105,7 +101,7 @@ function winner(match) {
 
 
 // ============================================================
-// HRÁČ V BOXU
+// HRÁČ
 // ============================================================
 
 function playerRow(name, score) {
@@ -150,7 +146,7 @@ function playerRow(name, score) {
 
 
 // ============================================================
-// ZÁPAS
+// BOX ZÁPASU
 // ============================================================
 
 function matchBox(match, label) {
@@ -255,7 +251,7 @@ function nextMatch(p1, p2, data) {
 
 
 // ============================================================
-// VYKRESLENÍ
+// VYKRESLENÍ PAVOUKA
 // ============================================================
 
 function render() {
@@ -267,12 +263,13 @@ function render() {
     const w4 = winner(MATCHES[3]);
 
 
+    // Druhé kolo
+
     const r2a = nextMatch(
         w1,
         w2,
         ROUND2[0]
     );
-
 
     const r2b = nextMatch(
         w3,
@@ -281,9 +278,13 @@ function render() {
     );
 
 
+    // Vítězové druhého kola
+
     const w5 = winner(r2a);
     const w6 = winner(r2b);
 
+
+    // Finále
 
     const final = nextMatch(
         w5,
@@ -295,14 +296,15 @@ function render() {
     const champion = winner(final);
 
 
-    const bracket =
-        document.getElementById("bracket");
+    // Vykreslení
+
+    const bracket = document.getElementById("bracket");
 
 
     if (!bracket) {
 
         console.error(
-            "CHYBA: Element #bracket nebyl nalezen."
+            "Element #bracket nebyl nalezen."
         );
 
         return;
@@ -315,9 +317,9 @@ function render() {
         <section class="bracket">
 
 
-            <!-- ==================== -->
+            <!-- ========================= -->
             <!-- 1. KOLO -->
-            <!-- ==================== -->
+            <!-- ========================= -->
 
             <div class="round round1">
 
@@ -334,9 +336,9 @@ function render() {
             </div>
 
 
-            <!-- ==================== -->
+            <!-- ========================= -->
             <!-- 2. KOLO -->
-            <!-- ==================== -->
+            <!-- ========================= -->
 
             <div class="round round2">
 
@@ -349,9 +351,9 @@ function render() {
             </div>
 
 
-            <!-- ==================== -->
+            <!-- ========================= -->
             <!-- FINÁLE -->
-            <!-- ==================== -->
+            <!-- ========================= -->
 
             <div class="round final-round">
 
@@ -408,4 +410,3 @@ function render() {
 // ============================================================
 
 render();
-```
