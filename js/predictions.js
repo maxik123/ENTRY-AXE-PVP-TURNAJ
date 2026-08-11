@@ -32,7 +32,7 @@ const matches = [
     {
         id:"miner-kyokutan",
         player1:"MINER99",
-        player2:"Kyokutan_",date:"?. ?. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
+        player2:"Kyokutan_",date:"11. 8. 2026",time:"20:20",stream:"https://www.youtube.com/live/nh6ZkeSCJIU?si=fMiAG-dvjNCSZVUc"
     },
 
 ];
