@@ -202,8 +202,8 @@ function matchBox(match, label) {
 const ROUND2 = [
 
     {
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 10,
         record: YOUTUBE
     },
 
