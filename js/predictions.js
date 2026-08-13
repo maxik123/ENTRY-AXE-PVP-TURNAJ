@@ -29,7 +29,11 @@ const matches = [
         player1:"xDaniCz",
         player2:"Drticka",date:"?. ?. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
     },
-    
+        {
+        id:"argys-pleistonax",
+        player1:"ksd_arrgys",
+        player2:"Pleistonax",date:"16. 8. 2026",time:"17:00",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
+    },
     {
         id:"kufrajzcz-tomas",
         player1:"kufrajzcz",
