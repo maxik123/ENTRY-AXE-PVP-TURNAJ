@@ -1,5 +1,6 @@
 /* ==========================================================
-   ENTRYHO AXEPVP — OPRAVENÝ BUM-BUM PAVOUK
+   ENTRYHO AXEPVP — BRACKET
+   2 SKUPINY / 8 HRÁČŮ
 ========================================================== */
 
 .wrap {
@@ -8,16 +9,44 @@
     padding: 25px 20px 90px;
 }
 
+
+/* ==========================================================
+   SKUPINY
+========================================================== */
+
+.group-section {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.group-section:last-child {
+    margin-bottom: 0;
+}
+
+.group-section + .group-section {
+    padding-top: 60px;
+    border-top: 1px solid #222;
+}
+
+
+/* ==========================================================
+   TOPBAR
+========================================================== */
+
 .topbar {
     max-width: 1400px;
-    margin: 0 auto 30px;
+    margin: 0 auto 35px;
     padding: 18px 22px;
+
     border: 1px solid #292929;
     border-radius: 16px;
+
     background: #0d0d0d;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     gap: 20px;
 }
 
@@ -30,35 +59,58 @@
 
 .topbar h2 {
     margin: 4px 0 0;
+
     color: #facc15;
+
     font-size: 24px;
+    font-weight: 900;
 }
 
 .topbar > b {
     color: #facc15;
+
     border: 1px solid #facc15;
+
     padding: 10px 14px;
+
     border-radius: 9px;
+
     font-size: 10px;
+
     white-space: nowrap;
 }
 
-/* =========================
+
+/* ==========================================================
    PAVOUK
-========================= */
+========================================================== */
 
 .bracket {
     width: 100%;
     max-width: 1450px;
+
     margin: 0 auto;
+
     display: grid;
-    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr) minmax(250px, 1fr);
+
+    grid-template-columns:
+        minmax(250px, 1fr)
+        minmax(250px, 1fr)
+        minmax(250px, 1fr);
+
     gap: 55px;
+
     align-items: center;
 }
 
+
+/* ==========================================================
+   KOLO
+========================================================== */
+
 .round {
     position: relative;
+
     display: flex;
     flex-direction: column;
 }
@@ -75,52 +127,103 @@
     gap: 20px;
 }
 
+
+/* ==========================================================
+   NADPIS KOLA
+========================================================== */
+
 .round-title {
     color: #facc15;
+
     text-align: center;
+
     font-size: 11px;
     font-weight: 900;
+
     letter-spacing: 3px;
+
     margin-bottom: 5px;
 }
 
+
+/* ==========================================================
+   ZÁPAS
+========================================================== */
+
 .match-wrap {
     position: relative;
+
+    width: 100%;
+
+    min-width: 0;
 }
 
 .match-label {
     color: #666;
+
     font-size: 8px;
     font-weight: 900;
+
     letter-spacing: 1.5px;
+
     margin: 0 0 6px 5px;
 }
 
 .bracket .match {
+    box-sizing: border-box !important;
+
     width: 100%;
     min-width: 0;
-    padding: 8px;
-    margin: 0;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 8px !important;
+
+    display: block !important;
+
+    overflow: hidden !important;
+
     border: 1px solid #303030;
+
     border-left: 3px solid #facc15;
+
     border-radius: 12px;
-    background: linear-gradient(145deg, #151515, #090909);
-    box-shadow: 0 10px 30px rgba(0,0,0,.45);
+
+    background:
+        linear-gradient(
+            145deg,
+            #151515,
+            #090909
+        );
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.45);
 }
 
 .bracket .match.won {
     border-left-color: #22c55e;
 }
 
-/* =========================
+
+/* ==========================================================
    HRÁČ
-========================= */
+========================================================== */
 
 .player {
+    width: 100%;
+
+    min-height: 46px;
+    height: 46px;
+
+    box-sizing: border-box;
+
     display: flex;
     align-items: center;
+
     gap: 10px;
-    min-height: 48px;
 }
 
 .player + .player {
@@ -129,72 +232,140 @@
 
 .player span {
     min-width: 0;
+
     flex: 1;
+
     color: #eee;
+
     font-size: 12px;
     font-weight: 800;
+
     white-space: nowrap;
+
     overflow: hidden;
+
     text-overflow: ellipsis;
 }
 
 .player strong {
-    width: 28px;
+    flex: 0 0 22px;
+
+    width: 22px;
+
     text-align: center;
+
     color: #facc15;
+
     font-size: 15px;
     font-weight: 900;
 }
 
+
+/* ==========================================================
+   MINECRAFT HEAD
+========================================================== */
+
 .head {
-    width: 38px;
-    height: 38px;
-    flex: 0 0 38px;
+    width: 36px !important;
+    height: 36px !important;
+
+    min-width: 36px;
+    max-width: 36px;
+
+    min-height: 36px;
+    max-height: 36px;
+
+    flex: 0 0 36px;
+
+    display: block;
+
+    object-fit: cover;
+
     border-radius: 6px;
+
     image-rendering: pixelated;
+
     background: #181818;
 }
 
 .head.empty {
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     color: #555;
+
     font-weight: 900;
 }
 
-/* =========================
+
+/* ==========================================================
    ZÁZNAM
-========================= */
+========================================================== */
 
 .record {
     display: flex;
+
     justify-content: center;
     align-items: center;
-    min-height: 30px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    height: 28px;
+    min-height: 28px;
+
     margin-top: 8px;
+
     border: 1px solid #702927;
+
     border-radius: 7px;
+
     background: rgba(229,57,53,.06);
+
     color: #ef5550;
+
     text-decoration: none;
+
     font-size: 8px;
     font-weight: 900;
+
     letter-spacing: .6px;
+
     transition: .2s;
 }
 
 .record:hover {
     background: #e53935;
+
     color: #fff;
+
     transform: translateY(-2px);
 }
 
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
 .match-status {
+    width: 100%;
+
+    box-sizing: border-box;
+
     text-align: center;
+
     color: #555;
+
     font-size: 7px;
     font-weight: 900;
+
+    line-height: 12px;
+
+    min-height: 12px;
+
     margin-top: 6px;
 }
 
@@ -202,78 +373,140 @@
     color: #22c55e;
 }
 
-/* =========================
-   SPOJOVACÍ ČÁRY
-========================= */
 
-.round1 .match-wrap::after,
-.round2 .match-wrap::after {
+/* ==========================================================
+   SPOJOVACÍ ČÁRY
+========================================================== */
+
+/* vodorovná čára z 1. kola */
+
+.round1 .match-wrap::after {
     content: "";
+
     position: absolute;
+
     right: -28px;
+
+    top: 50%;
+
     width: 28px;
+
     height: 1px;
+
     background: #facc15;
+
     opacity: .55;
 }
 
-.round1 .match-wrap::after {
-    top: 50%;
-}
+
+/* vodorovná čára ze semifinále */
 
 .round2 .match-wrap::after {
+    content: "";
+
+    position: absolute;
+
+    right: -28px;
+
     top: 50%;
+
+    width: 28px;
+
+    height: 1px;
+
+    background: #facc15;
+
+    opacity: .55;
 }
 
-/* svislé spojení mezi dvojicemi */
-.round1 .match-wrap:nth-child(2)::before,
-.round1 .match-wrap:nth-child(4)::before {
+
+/* ==========================================================
+   SVISLÉ ČÁRY 1. KOLA
+========================================================== */
+
+.round1 .match-wrap:nth-of-type(2)::before,
+.round1 .match-wrap:nth-of-type(4)::before,
+.round1 .match-wrap:nth-of-type(6)::before,
+.round1 .match-wrap:nth-of-type(8)::before {
+
     content: "";
+
     position: absolute;
+
     right: -28px;
+
     top: 50%;
+
     width: 28px;
+
     height: calc(100% + 20px);
+
     border-right: 1px solid #facc15;
+
     opacity: .35;
+
     pointer-events: none;
 }
 
-/* =========================
-   VÍTĚZ
-========================= */
+
+/* ==========================================================
+   VÍTĚZ SKUPINY
+========================================================== */
 
 .champion {
     margin-top: 30px;
+
     padding: 20px;
+
     border: 1px solid #333;
+
     border-radius: 15px;
+
     text-align: center;
+
     background: #0c0c0c;
+
     color: #666;
 }
 
 .champion.active {
     border: 2px solid #facc15;
+
     color: #050505;
-    background: linear-gradient(145deg,#facc15,#dcae08);
-    box-shadow: 0 15px 45px rgba(250,204,21,.18);
+
+    background:
+        linear-gradient(
+            145deg,
+            #facc15,
+            #dcae08
+        );
+
+    box-shadow:
+        0 15px 45px
+        rgba(250,204,21,.18);
 }
 
 .champion small {
     display: block;
+
     font-size: 8px;
     font-weight: 900;
+
     letter-spacing: 2px;
+
     margin-bottom: 10px;
 }
 
 .champion img {
     width: 48px;
     height: 48px;
+
     vertical-align: middle;
+
     margin-right: 8px;
+
     border-radius: 6px;
+
     image-rendering: pixelated;
 }
 
@@ -281,45 +514,64 @@
     font-size: 18px;
 }
 
-/* =========================
+
+/* ==========================================================
    LEGENDA
-========================= */
+========================================================== */
 
 .legend {
     max-width: 900px;
+
     margin: 45px auto 0;
+
     display: flex;
+
     justify-content: center;
+
     gap: 30px;
+
     color: #555;
+
     font-size: 9px;
     font-weight: 800;
+
     text-align: center;
 }
 
+
 /* ==========================================================
    TABLET
-   DŮLEŽITÁ OPRAVA:
-   1035px už NESMÍ spadnout do jednosloupcového layoutu.
 ========================================================== */
 
 @media (max-width: 1100px) and (min-width: 701px) {
-    .bracket {
-        grid-template-columns: minmax(210px, 1fr) minmax(210px, 1fr) minmax(210px, 1fr);
-        gap: 28px;
-    }
 
-    .player span {
-        font-size: 10px;
+    .bracket {
+        grid-template-columns:
+            minmax(200px, 1fr)
+            minmax(200px, 1fr)
+            minmax(200px, 1fr);
+
+        gap: 28px;
     }
 
     .player {
         gap: 7px;
     }
 
+    .player span {
+        font-size: 10px;
+    }
+
     .head {
-        width: 34px;
-        height: 34px;
+        width: 34px !important;
+        height: 34px !important;
+
+        min-width: 34px;
+        max-width: 34px;
+
+        min-height: 34px;
+        max-height: 34px;
+
         flex-basis: 34px;
     }
 
@@ -330,33 +582,69 @@
     .round1 .match-wrap::after,
     .round2 .match-wrap::after {
         right: -15px;
+
         width: 15px;
     }
+
+    .round1 .match-wrap:nth-of-type(2)::before,
+    .round1 .match-wrap:nth-of-type(4)::before,
+    .round1 .match-wrap:nth-of-type(6)::before,
+    .round1 .match-wrap:nth-of-type(8)::before {
+        right: -15px;
+
+        width: 15px;
+    }
+
 }
 
-/* =========================
+
+/* ==========================================================
    MOBIL
-========================= */
+========================================================== */
 
 @media (max-width: 700px) {
+
     .wrap {
         padding: 12px 10px 60px;
     }
 
+
+    /* skupiny */
+
+    .group-section {
+        margin-bottom: 60px;
+    }
+
+    .group-section + .group-section {
+        padding-top: 40px;
+    }
+
+
+    /* topbar */
+
     .topbar {
         align-items: flex-start;
+
         flex-direction: column;
+
+        margin-bottom: 25px;
     }
 
     .topbar > b {
         align-self: flex-start;
     }
 
+
+    /* pavouk */
+
     .bracket {
         grid-template-columns: 1fr;
+
         max-width: 500px;
+
         gap: 45px;
     }
+
 
     .round {
         gap: 20px;
@@ -366,77 +654,59 @@
         gap: 20px;
     }
 
+
+    /* vypnout čáry */
+
     .round1 .match-wrap::after,
     .round1 .match-wrap::before,
     .round2 .match-wrap::after {
         display: none;
     }
 
-    .legend {
-        flex-direction: column;
+
+    /* hráč */
+
+    .player {
         gap: 8px;
     }
+
+    .player span {
+        font-size: 11px;
+    }
+
+
+    /* legenda */
+
+    .legend {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
 
     .bracket .match {
         min-width: 0;
     }
+
 }
 
 
 /* ==========================================================
-   FIX: bracket box content must stay INSIDE the box.
-   style.css globally sets .match { height:70px; }, which is
-   too short for 2 players + record + status.
+   EXTRA OCHRANA PRO OBSAH BOXU
 ========================================================== */
 
-.bracket .match {
-    box-sizing: border-box !important;
-    width: 100%;
+.bracket,
+.bracket .round,
+.bracket .match-wrap {
     min-width: 0;
-    height: auto !important;
-    min-height: 0 !important;
-    margin: 0 !important;
-    padding: 8px !important;
-    display: block !important;
-    overflow: hidden !important;
 }
 
 .bracket .match .player {
-    width: 100%;
-    min-height: 46px;
-    height: 46px;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
 }
 
 .bracket .match .head {
-    width: 36px !important;
-    height: 36px !important;
-    min-width: 36px;
-    max-width: 36px;
-    min-height: 36px;
-    max-height: 36px;
-    flex: 0 0 36px;
-    display: block;
     object-fit: cover;
-    border-radius: 6px;
-    image-rendering: pixelated;
-}
-
-.bracket .match .record {
-    width: 100%;
-    box-sizing: border-box;
-    height: 28px;
-    min-height: 28px;
-    margin-top: 8px;
-}
-
-.bracket .match .match-status {
-    width: 100%;
-    box-sizing: border-box;
-    line-height: 12px;
-    min-height: 12px;
 }
 
 .bracket .match span {
@@ -445,24 +715,14 @@
 
 .bracket .match .player span {
     display: block;
+
     flex: 1;
+
     min-width: 0;
+
     overflow: hidden;
+
     white-space: nowrap;
+
     text-overflow: ellipsis;
-}
-
-.bracket .match .player strong {
-    flex: 0 0 22px;
-    width: 22px;
-}
-
-.bracket,
-.bracket .round,
-.bracket .match-wrap {
-    min-width: 0;
-}
-
-.bracket .match-wrap {
-    width: 100%;
 }
