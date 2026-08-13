@@ -42,7 +42,7 @@ const matches = [
     {
         id:"housle-lukyk",
         player1:"TenSHouslema",
-        player2:"Lukyk656",date:"20. 8. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
+        player2:"Lukyk656",date:"20. 8. 2026",time:"18:00",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
     },
 ];
 
