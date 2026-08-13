@@ -25,7 +25,7 @@ const matches = [
 
 
     {
-        id:"xdanicz-drticka",
+        id:"xdani-wbot",
         player1:"xDaniCz",
         player2:"WBotWarrior7",date:"15. 8. 2026",time:"13:00",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
     },
