@@ -29,6 +29,12 @@ const matches = [
         player1:"xDaniCz",
         player2:"Drticka",date:"?. ?. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
     },
+    
+    {
+        id:"kufrajzcz-tomas",
+        player1:"kufrajzcz",
+        player2:"Tomas123456",date:"16. 8. 2026",time:"?",stream:"https://www.youtube.com/live/K2_0Oq3q9n0"
+    },
 ];
 
 
