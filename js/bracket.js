@@ -100,8 +100,8 @@ const GROUP1 = [
 const GROUP2 = [
 
     {
-        player1: "HRAC5",
-        player2: "HRAC6",
+        player1: "kufrajzcz",
+        player2: "Tomas123456",
 
         score1: null,
         score2: null,
@@ -111,8 +111,8 @@ const GROUP2 = [
 
 
     {
-        player1: "HRAC7",
-        player2: "HRAC8",
+        player1: "ksd_argys",
+        player2: "Pleistonax",
 
         score1: null,
         score2: null,
@@ -122,8 +122,8 @@ const GROUP2 = [
 
 
     {
-        player1: "HRAC9",
-        player2: "HRAC10",
+        player1: "TenSHouslema",
+        player2: "Lukyk656",
 
         score1: null,
         score2: null,
@@ -133,8 +133,8 @@ const GROUP2 = [
 
 
     {
-        player1: "HRAC11",
-        player2: "HRAC12",
+        player1: "Predator_18",
+        player2: "Ciesliik",
 
         score1: null,
         score2: null,
@@ -157,8 +157,8 @@ const GROUP2 = [
 const GROUP1_ROUND2 = [
 
     {
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 10,
 
         record: YOUTUBE
     },
