@@ -66,10 +66,10 @@ const GROUP1 = [
 
     {
         player1: "xDaniCz",
-        player2: "Drticka",
+        player2: "WBotWarrior7",
 
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 9,
 
         record: YOUTUBE
     },
