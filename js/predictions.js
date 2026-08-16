@@ -22,6 +22,11 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 const matches = [
 
     {
+        id:"argys-drticka",
+        player1:"ksd_argys",
+        player2:"Drticka",date:"17. 8. 2026",time:"19:00",stream:"https://youtube.com/live/IJCCDwb7mKQ?feature=share"
+    },
+    {
         id:"kufrajzcz-tomas",
         player1:"kufrajzcz",
         player2:"Tomas123456",date:"16. 8. 2026",time:"19:00",stream:"https://youtube.com/live/IJCCDwb7mKQ?feature=share"
