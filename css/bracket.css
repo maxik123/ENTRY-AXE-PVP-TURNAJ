@@ -927,3 +927,215 @@
         flex-basis: 29px;
     }
 }
+
+
+/* ==========================================================
+   DOUBLE ELIMINATION — WINNERS / LOSERS
+========================================================== */
+
+.bracket-title {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto 14px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 1000;
+    letter-spacing: 3px;
+}
+
+.winner-title {
+    color: #facc15;
+}
+
+.losers-title {
+    margin-top: 70px;
+    color: #ef5550;
+}
+
+.losers-bracket {
+    grid-template-columns:
+        minmax(250px, 1fr)
+        minmax(250px, 1fr)
+        minmax(250px, 1fr);
+}
+
+.losers-bracket .match {
+    border-left-color: #ef5550;
+}
+
+.losers-bracket .match.won {
+    border-left-color: #22c55e;
+}
+
+.losers-bracket .round2 {
+    gap: 90px;
+}
+
+.lb-round1 {
+    gap: 70px;
+}
+
+.lb-round2 {
+    gap: 140px;
+}
+
+.lb-final-round {
+    justify-content: center;
+}
+
+.losers-bracket .round-title {
+    color: #ef5550;
+}
+
+.losers-bracket .round1 .match-wrap::after,
+.losers-bracket .match-wrap::after {
+    background: #ef5550;
+}
+
+.bracket-note {
+    max-width: 900px;
+    margin: 22px auto 0;
+    padding: 11px 14px;
+    border: 1px solid #2d2020;
+    border-radius: 9px;
+    background: rgba(229,57,53,.04);
+    color: #777;
+    text-align: center;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.stream-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.stream-list .record {
+    margin-top: 0;
+}
+
+.grand-final {
+    max-width: 850px;
+    margin: 70px auto 0;
+    padding: 24px;
+    border: 1px solid #3a3319;
+    border-radius: 16px;
+    background:
+        linear-gradient(145deg, #14130d, #090909);
+    box-shadow: 0 15px 45px rgba(0,0,0,.35);
+}
+
+.grand-final > .round-title {
+    color: #facc15;
+    margin-bottom: 20px;
+}
+
+.grand-final-grid {
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.grand-final-grid > div:first-child,
+.grand-final-grid > div:last-child {
+    padding: 10px;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    background: #0b0b0b;
+}
+
+.grand-final-source {
+    color: #666;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.grand-final-vs {
+    color: #facc15;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 1000;
+}
+
+.grand-final-match .match-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grand-final-match .match {
+    border-left-color: #facc15;
+    border-color: #6b5a13;
+}
+
+.grand-final-match .match.won {
+    border-left-color: #22c55e;
+}
+
+@media (max-width: 1100px) and (min-width: 701px) {
+    .losers-bracket {
+        gap: 28px;
+    }
+
+    .lb-round1 {
+        gap: 55px;
+    }
+
+    .lb-round2 {
+        gap: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .bracket-title {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .losers-title {
+        margin-top: 45px;
+    }
+
+    .losers-bracket {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .lb-round1,
+    .lb-round2,
+    .lb-final-round {
+        gap: 13px;
+    }
+
+    .bracket-note {
+        font-size: 8px;
+        line-height: 13px;
+    }
+
+    .grand-final {
+        margin-top: 45px;
+        padding: 15px;
+    }
+
+    .grand-final-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .grand-final-vs {
+        padding: 3px;
+    }
+
+    .grand-final-grid .player {
+        min-height: 40px;
+        height: 40px;
+    }
+}
