@@ -111,13 +111,13 @@ const GROUP2 = [
     {
         player1: "kufrajzcz",
         player2: "Tomas123456",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 0,
         streams: []
     },
     {
         player1: "ksd_argys",
-        player2: "Pleistonax",
+        player2: "Drticka",
         score1: null,
         score2: null,
         streams: []
