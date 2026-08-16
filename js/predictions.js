@@ -21,34 +21,22 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 const matches = [
 
-
-
-
-    {
-        id:"xdani-wbot",
-        player1:"xDaniCz",
-        player2:"WBotWarrior7",date:"15. 8. 2026",time:"13:00",stream:"https://youtube.com/live/zEGj9GIeOKY?feature=share"
-    },
-        {
-        id:"hungi-sajk",
-        player1:"Hungi_",
-        player2:"Sajk3000",date:"15. 8. 2026",time:"18:30",stream:"https://youtube.com/live/HE_uS1p6SUs?feature=share"
-    },
-        {
-        id:"argys-pleistonax",
-        player1:"ksd_arrgys",
-        player2:"Pleistonax",date:"16. 8. 2026",time:"17:00",stream:"https://youtube.com/live/wNHxETmyV4o?feature=share"
-    },
     {
         id:"kufrajzcz-tomas",
         player1:"kufrajzcz",
         player2:"Tomas123456",date:"16. 8. 2026",time:"19:00",stream:"https://youtube.com/live/IJCCDwb7mKQ?feature=share"
+    },
+        {
+        id:"predator-ciesliik",
+        player1:"Predator_18",
+        player2:"Ciesliik",date:"17. 8. 2026",time:"18:00",stream:""
     },
     {
         id:"housle-lukyk",
         player1:"TenSHouslema",
         player2:"Lukyk656",date:"20. 8. 2026",time:"18:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
     },
+    
 ];
 
 
