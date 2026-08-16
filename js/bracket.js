@@ -1,788 +1,444 @@
 // ============================================================
-// ENTRYHO AXEPVP - PAVOUK TURNAJE
+// ENTRYHO AXEPVP — DOUBLE ELIMINATION
 // ============================================================
+// Jak přidat stream:
+// streams: ["https://youtube.com/live/TVUJ-LINK"]
 //
-// 20:0 -> vyhrává hráč 1
-// 0:20 -> vyhrává hráč 2
-// null -> zápas ještě není odehraný
+// Pokud má zápas více streamů:
+// streams: [
+//   "https://youtube.com/live/LINK-1",
+//   "https://youtube.com/live/LINK-2"
+// ]
 //
-// Jsou zde 2 samostatné skupiny:
-//
-// SKUPINA 1
-// 4 zápasy -> semifinále -> finále
-//
-// SKUPINA 2
-// 4 zápasy -> semifinále -> finále
-//
+// Na webu se URL nikdy nevypisuje. Zobrazí se pouze tlačítko
+// „▶ SLEDOVAT STREAM“.
 // ============================================================
 
-
-
-// ============================================================
-// ODKAZY NA ZÁZNAMY
-// ============================================================
-
-const MAJNR =
-    "https://www.youtube.com/live/rxXHjXghW0M?si=fxL59SZGBRPW2JN1";
-
-const KYOKUTAN =
-    "https://www.youtube.com/live/irE1Mar6jAw?si=-OTr4eEhJAhhUYCI";
-
-const ZELVAA =
-    "https://www.youtube.com/live/HJc7dUnEEKo?si=jNPM6_yvvtZWzqhe";
-
-const YOUTUBE =
-    "https://www.youtube.com/@Entry14";
-
-
+const STREAMS = {
+    entry: "https://www.youtube.com/@Entry14"
+};
 
 // ============================================================
-// SKUPINA 1
+// SKUPINA 1 — WINNERS BRACKET
 // ============================================================
 
 const GROUP1 = [
-
     {
         player1: "MINER99",
         player2: "Hungi_",
-
         score1: 20,
         score2: 5,
-
-        record: MAJNR
+        streams: ["https://www.youtube.com/live/rxXHjXghW0M"]
     },
-
-
     {
         player1: "Kyokutan_",
         player2: "Sajk3000",
-
         score1: 20,
         score2: 15,
-
-        record: KYOKUTAN
+        streams: ["https://www.youtube.com/live/irE1Mar6jAw"]
     },
-
-
     {
         player1: "xDaniCz",
         player2: "WBotWarrior7",
-
         score1: 20,
         score2: 9,
-
-        record: YOUTUBE
+        streams: []
     },
-
-
     {
         player1: "Zelvaa",
         player2: "Nojmisek",
-
         score1: 20,
         score2: 2,
-
-        record: ZELVAA
+        streams: ["https://www.youtube.com/live/HJc7dUnEEKo"]
     }
-
 ];
 
+const GROUP1_WB_R2 = [
+    { score1: 20, score2: 10, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
 
+const GROUP1_WB_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
 
 // ============================================================
-// SKUPINA 2
+// SKUPINA 1 — LOSERS BRACKET
 // ============================================================
+// LB R1:
+// poražený zápasu 1 vs poražený zápasu 2
+// poražený zápasu 3 vs poražený zápasu 4
 //
-// TADY SI DOSADÍŠ HRÁČE SKUPINY 2
+// LB R2:
+// vítěz LB R1-1 vs poražený WB semifinále 1
+// vítěz LB R1-2 vs poražený WB semifinále 2
 //
+// LB FINÁLE:
+// vítězové LB R2
+//
+// GRAND FINÁLE:
+// vítěz WB finále vs vítěz LB finále
+
+const GROUP1_LB_R1 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP1_LB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP1_LB_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+const GROUP1_GRAND_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+// ============================================================
+// SKUPINA 2 — WINNERS BRACKET
 // ============================================================
 
 const GROUP2 = [
-
     {
         player1: "kufrajzcz",
         player2: "Tomas123456",
-
         score1: null,
         score2: null,
-
-        record: YOUTUBE
+        streams: []
     },
-
-
     {
         player1: "ksd_argys",
         player2: "Pleistonax",
-
         score1: null,
         score2: null,
-
-        record: YOUTUBE
+        streams: []
     },
-
-
     {
         player1: "TenSHouslema",
         player2: "Lukyk656",
-
         score1: null,
         score2: null,
-
-        record: YOUTUBE
+        streams: []
     },
-
-
     {
         player1: "Predator_18",
         player2: "Ciesliik",
-
         score1: null,
         score2: null,
-
-        record: YOUTUBE
+        streams: []
     }
-
 ];
 
-
-
-// ============================================================
-// DATA PRO 2. KOLO - SKUPINA 1
-// ============================================================
-//
-// Po skončení prvního kola se hráči automaticky doplní.
-//
-// ============================================================
-
-const GROUP1_ROUND2 = [
-
-    {
-        score1: 20,
-        score2: 10,
-
-        record: YOUTUBE
-    },
-
-
-    {
-        score1: null,
-        score2: null,
-
-        record: YOUTUBE
-    }
-
+const GROUP2_WB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
 ];
 
-
-
-// ============================================================
-// DATA PRO 2. KOLO - SKUPINA 2
-// ============================================================
-
-const GROUP2_ROUND2 = [
-
-    {
-        score1: null,
-        score2: null,
-
-        record: YOUTUBE
-    },
-
-
-    {
-        score1: null,
-        score2: null,
-
-        record: YOUTUBE
-    }
-
-];
-
-
-
-// ============================================================
-// FINÁLE SKUPINY 1
-// ============================================================
-
-const GROUP1_FINAL = {
-
+const GROUP2_WB_FINAL = {
     score1: null,
     score2: null,
-
-    record: YOUTUBE
-
+    streams: []
 };
 
-
-
 // ============================================================
-// FINÁLE SKUPINY 2
+// SKUPINA 2 — LOSERS BRACKET
 // ============================================================
 
-const GROUP2_FINAL = {
+const GROUP2_LB_R1 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
 
+const GROUP2_LB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP2_LB_FINAL = {
     score1: null,
     score2: null,
-
-    record: YOUTUBE
-
+    streams: []
 };
 
-
+const GROUP2_GRAND_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
 
 // ============================================================
-// AVATAR
+// HELPERS
 // ============================================================
 
 function avatar(name) {
-
-    if (!name) {
-
-        return "";
-
-    }
-
-
-    return (
-        "https://mc-heads.net/avatar/" +
-        encodeURIComponent(name) +
-        "/64"
-    );
-
+    if (!name) return "";
+    return "https://mc-heads.net/avatar/" + encodeURIComponent(name) + "/64";
 }
-
-
-
-// ============================================================
-// VÍTĚZ ZÁPASU
-// ============================================================
 
 function winner(match) {
+    if (!match || !match.player1 || !match.player2) return null;
+    if (match.score1 === null || match.score2 === null) return null;
 
-    if (!match) {
-
-        return null;
-
-    }
-
-
-    if (!match.player1 || !match.player2) {
-
-        return null;
-
-    }
-
-
-    if (
-        match.score1 === null ||
-        match.score2 === null
-    ) {
-
-        return null;
-
-    }
-
-
-    if (
-        match.score1 === 20 &&
-        match.score2 < 20
-    ) {
-
-        return match.player1;
-
-    }
-
-
-    if (
-        match.score2 === 20 &&
-        match.score1 < 20
-    ) {
-
-        return match.player2;
-
-    }
-
+    if (match.score1 === 20 && match.score2 < 20) return match.player1;
+    if (match.score2 === 20 && match.score1 < 20) return match.player2;
 
     return null;
-
 }
 
-
-
-// ============================================================
-// ŘÁDEK HRÁČE
-// ============================================================
+function loser(match) {
+    const w = winner(match);
+    if (!w || !match) return null;
+    return w === match.player1 ? match.player2 : match.player1;
+}
 
 function playerRow(name, score) {
-
     if (!name) {
-
         return `
-
             <div class="player waiting">
-
-                <div class="head empty">
-                    ?
-                </div>
-
-                <span>
-                    ČEKÁME
-                </span>
-
-                <strong>
-                    —
-                </strong>
-
+                <div class="head empty">?</div>
+                <span>ČEKÁME</span>
+                <strong>—</strong>
             </div>
-
         `;
-
     }
 
-
     return `
-
         <div class="player">
-
             <img
                 class="head"
                 src="${avatar(name)}"
                 onerror="this.src='https://mc-heads.net/avatar/Steve/64'"
                 alt=""
             >
-
-            <span>
-                ${name}
-            </span>
-
-            <strong>
-                ${score === null ? "—" : score}
-            </strong>
-
+            <span>${name}</span>
+            <strong>${score === null ? "—" : score}</strong>
         </div>
-
     `;
-
 }
 
+function streamButtons(match) {
+    const streams = Array.isArray(match?.streams)
+        ? match.streams.filter(Boolean)
+        : [];
 
+    if (!streams.length) return "";
 
-// ============================================================
-// BOX ZÁPASU
-// ============================================================
-
-function matchBox(match, label) {
-
-    const w = winner(match);
-
+    if (streams.length === 1) {
+        return `
+            <a class="record"
+               href="${streams[0]}"
+               target="_blank"
+               rel="noopener noreferrer">
+                ▶ SLEDOVAT STREAM
+            </a>
+        `;
+    }
 
     return `
-
-        <div class="match-wrap">
-
-
-            ${
-                label
-                ? `
-                    <div class="match-label">
-                        ${label}
-                    </div>
-                `
-                : ""
-            }
-
-
-            <div
-                class="match ${w ? "won" : ""}"
-            >
-
-
-                ${playerRow(
-                    match.player1,
-                    match.score1
-                )}
-
-
-                ${playerRow(
-                    match.player2,
-                    match.score2
-                )}
-
-
-
-                <a
-                    class="record"
-                    href="${match.record || YOUTUBE}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-
-                    ▶ SLEDOVAT ZÁZNAM
-
+        <div class="stream-list">
+            ${streams.map((url, i) => `
+                <a class="record"
+                   href="${url}"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ▶ SLEDOVAT STREAM ${i + 1}
                 </a>
+            `).join("")}
+        </div>
+    `;
+}
 
+function matchBox(match, label, extraClass = "") {
+    const w = winner(match);
 
+    return `
+        <div class="match-wrap">
+            ${label ? `<div class="match-label">${label}</div>` : ""}
+
+            <div class="match ${w ? "won" : ""} ${extraClass}">
+                ${playerRow(match?.player1, match?.score1 ?? null)}
+                ${playerRow(match?.player2, match?.score2 ?? null)}
+
+                ${streamButtons(match || {})}
 
                 <div class="match-status">
-
                     ${
                         w
                         ? `${w} POSTUPUJE`
                         : (
-                            match.player1 &&
-                            match.player2
+                            match?.player1 && match?.player2
                             ? "ČEKÁME NA VÝSLEDEK"
                             : "ČEKÁME NA HRÁČE"
                         )
                     }
-
                 </div>
-
-
             </div>
-
-
         </div>
-
     `;
-
 }
 
-
-
-// ============================================================
-// VYTVOŘENÍ DALŠÍHO ZÁPASU
-// ============================================================
-
-function nextMatch(
-    player1,
-    player2,
-    data
-) {
-
+function nextMatch(player1, player2, data) {
     return {
-
-        player1: player1,
-
-        player2: player2,
-
-        score1: data.score1,
-
-        score2: data.score2,
-
-        record: data.record
-
+        player1,
+        player2,
+        score1: data?.score1 ?? null,
+        score2: data?.score2 ?? null,
+        streams: data?.streams || []
     };
-
 }
 
-
-
-// ============================================================
-// VYKRESLENÍ JEDNÉ SKUPINY
-// ============================================================
-
-function renderGroup(
-    containerId,
-    matches,
-    round2Data,
-    finalData,
-    groupName
-) {
-
-
-    const container =
-        document.getElementById(containerId);
-
-
-    if (!container) {
-
-        console.error(
-            `Element #${containerId} nebyl nalezen.`
-        );
-
-        return;
-
-    }
-
-
-
-    // ========================================================
-    // VÍTĚZOVÉ 1. KOLA
-    // ========================================================
-
+function renderWinnerBracket(matches, r2Data, finalData) {
     const w1 = winner(matches[0]);
-
     const w2 = winner(matches[1]);
-
     const w3 = winner(matches[2]);
-
     const w4 = winner(matches[3]);
 
+    const r2a = nextMatch(w1, w2, r2Data[0]);
+    const r2b = nextMatch(w3, w4, r2Data[1]);
 
+    const wf = nextMatch(winner(r2a), winner(r2b), finalData);
 
-    // ========================================================
-    // 2. KOLO
-    // ========================================================
+    return `
+        <div class="bracket-title winner-title">WINNERS BRACKET</div>
 
-    const r2a = nextMatch(
-        w1,
-        w2,
-        round2Data[0]
-    );
-
-
-    const r2b = nextMatch(
-        w3,
-        w4,
-        round2Data[1]
-    );
-
-
-
-    // ========================================================
-    // VÍTĚZOVÉ 2. KOLA
-    // ========================================================
-
-    const w5 = winner(r2a);
-
-    const w6 = winner(r2b);
-
-
-
-    // ========================================================
-    // FINÁLE
-    // ========================================================
-
-    const final = nextMatch(
-        w5,
-        w6,
-        finalData
-    );
-
-
-
-    // ========================================================
-    // VÍTĚZ SKUPINY
-    // ========================================================
-
-    const champion =
-        winner(final);
-
-
-
-    // ========================================================
-    // HTML
-    // ========================================================
-
-    container.innerHTML = `
-
-
-        <section class="bracket">
-
-
-            <!-- ========================================== -->
-            <!-- 1. KOLO -->
-            <!-- ========================================== -->
-
+        <div class="bracket winner-bracket">
             <div class="round round1">
-
-
-                <div class="round-title">
-                    1. KOLO
-                </div>
-
-
-                ${matchBox(
-                    matches[0],
-                    "ZÁPAS 1"
-                )}
-
-
-                ${matchBox(
-                    matches[1],
-                    "ZÁPAS 2"
-                )}
-
-
-                ${matchBox(
-                    matches[2],
-                    "ZÁPAS 3"
-                )}
-
-
-                ${matchBox(
-                    matches[3],
-                    "ZÁPAS 4"
-                )}
-
-
+                <div class="round-title">1. KOLO</div>
+                ${matchBox(matches[0], "ZÁPAS 1")}
+                ${matchBox(matches[1], "ZÁPAS 2")}
+                ${matchBox(matches[2], "ZÁPAS 3")}
+                ${matchBox(matches[3], "ZÁPAS 4")}
             </div>
-
-
-
-            <!-- ========================================== -->
-            <!-- 2. KOLO -->
-            <!-- ========================================== -->
 
             <div class="round round2">
-
-
-                <div class="round-title">
-                    SEMIFINÁLE
-                </div>
-
-
-                ${matchBox(
-                    r2a,
-                    "SEMIFINÁLE 1"
-                )}
-
-
-                ${matchBox(
-                    r2b,
-                    "SEMIFINÁLE 2"
-                )}
-
-
+                <div class="round-title">SEMIFINÁLE</div>
+                ${matchBox(r2a, "SEMIFINÁLE 1")}
+                ${matchBox(r2b, "SEMIFINÁLE 2")}
             </div>
-
-
-
-            <!-- ========================================== -->
-            <!-- FINÁLE -->
-            <!-- ========================================== -->
 
             <div class="round final-round">
+                <div class="round-title">FINÁLE WINNERS</div>
+                ${matchBox(wf, "FINÁLE WINNERS", "wb-final")}
+            </div>
+        </div>
 
+        <div class="bracket-note">
+            ❗ První prohra = přesun do LOSERS BRACKET. Druhá prohra = vyřazení.
+        </div>
+    `;
+}
 
-                <div class="round-title">
-                    FINÁLE
-                </div>
+function renderLosersBracket(matches, wbR2Data, lbR1Data, lbR2Data, lbFinalData, wbFinalData, grandFinalData) {
+    const l1 = loser(matches[0]);
+    const l2 = loser(matches[1]);
+    const l3 = loser(matches[2]);
+    const l4 = loser(matches[3]);
 
+    const lb1 = nextMatch(l1, l2, lbR1Data[0]);
+    const lb2 = nextMatch(l3, l4, lbR1Data[1]);
 
-                ${matchBox(
-                    final,
-                    "FINÁLE"
-                )}
+    const wb1 = nextMatch(winner(matches[0]), winner(matches[1]), wbR2Data[0]);
+    const wb2 = nextMatch(winner(matches[2]), winner(matches[3]), wbR2Data[1]);
 
+    const lb3 = nextMatch(winner(lb1), loser(wb1), lbR2Data[0]);
+    const lb4 = nextMatch(winner(lb2), loser(wb2), lbR2Data[1]);
 
+    const lbFinal = nextMatch(winner(lb3), winner(lb4), lbFinalData);
 
-                <!-- ====================================== -->
-                <!-- VÍTĚZ SKUPINY -->
-                <!-- ====================================== -->
+    const wbFinal = nextMatch(winner(wb1), winner(wb2), wbFinalData);
+    const grandFinal = nextMatch(winner(wbFinal), winner(lbFinal), grandFinalData);
 
-                <div
-                    class="
-                        champion
-                        ${champion ? "active" : ""}
-                    "
-                >
+    return `
+        <div class="bracket-title losers-title">LOSERS BRACKET</div>
 
-
-                    <small>
-                        ${groupName}
-                    </small>
-
-
-                    <div>
-
-
-                        ${
-                            champion
-
-                            ? `
-
-                                <img
-                                    src="${avatar(champion)}"
-                                    alt=""
-                                >
-
-                                <strong>
-                                    🏆 ${champion}
-                                </strong>
-
-                            `
-
-                            : `
-
-                                <strong>
-                                    ČEKÁME NA VÍTĚZE
-                                </strong>
-
-                            `
-                        }
-
-
-                    </div>
-
-
-                </div>
-
-
+        <div class="bracket losers-bracket">
+            <div class="round lb-round1">
+                <div class="round-title">LOSERS 1</div>
+                ${matchBox(lb1, "LB ZÁPAS 1")}
+                ${matchBox(lb2, "LB ZÁPAS 2")}
             </div>
 
+            <div class="round lb-round2">
+                <div class="round-title">LOSERS 2</div>
+                ${matchBox(lb3, "LB ZÁPAS 3")}
+                ${matchBox(lb4, "LB ZÁPAS 4")}
+            </div>
 
-        </section>
+            <div class="round lb-final-round">
+                <div class="round-title">LOSERS FINÁLE</div>
+                ${matchBox(lbFinal, "FINÁLE LOSERS")}
+            </div>
+        </div>
 
-
+        <div class="grand-final">
+            <div class="round-title">🏆 GRAND FINÁLE</div>
+            <div class="grand-final-grid">
+                <div>
+                    <div class="grand-final-source">WINNERS BRACKET</div>
+                    ${playerRow(winner(wbFinal), null)}
+                </div>
+                <div class="grand-final-vs">VS</div>
+                <div>
+                    <div class="grand-final-source">LOSERS BRACKET</div>
+                    ${playerRow(winner(lbFinal), null)}
+                </div>
+            </div>
+            <div class="grand-final-match">
+                ${matchBox(grandFinal, "GRAND FINÁLE")}
+            </div>
+        </div>
     `;
-
 }
 
+function renderGroup(containerId, matches, wbR2Data, wbFinalData, lbR1Data, lbR2Data, lbFinalData, grandFinalData) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
-
-// ============================================================
-// VYKRESLENÍ
-// ============================================================
+    container.innerHTML = `
+        ${renderWinnerBracket(matches, wbR2Data, wbFinalData)}
+        ${renderLosersBracket(
+            matches,
+            wbR2Data,
+            lbR1Data,
+            lbR2Data,
+            lbFinalData,
+            wbFinalData,
+            grandFinalData
+        )}
+    `;
+}
 
 function render() {
-
-
-    // ========================================================
-    // SKUPINA 1
-    // ========================================================
-
     renderGroup(
-
         "bracket-group1",
-
         GROUP1,
-
-        GROUP1_ROUND2,
-
-        GROUP1_FINAL,
-
-        "VÍTĚZ SKUPINY 1"
-
+        GROUP1_WB_R2,
+        GROUP1_WB_FINAL,
+        GROUP1_LB_R1,
+        GROUP1_LB_R2,
+        GROUP1_LB_FINAL,
+        GROUP1_GRAND_FINAL
     );
-
-
-
-    // ========================================================
-    // SKUPINA 2
-    // ========================================================
 
     renderGroup(
-
         "bracket-group2",
-
         GROUP2,
-
-        GROUP2_ROUND2,
-
-        GROUP2_FINAL,
-
-        "VÍTĚZ SKUPINY 2"
-
+        GROUP2_WB_R2,
+        GROUP2_WB_FINAL,
+        GROUP2_LB_R1,
+        GROUP2_LB_R2,
+        GROUP2_LB_FINAL,
+        GROUP2_GRAND_FINAL
     );
-
 }
-
-
-
-// ============================================================
-// START
-// ============================================================
 
 render();
