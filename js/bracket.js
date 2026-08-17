@@ -118,8 +118,8 @@ const GROUP2 = [
     {
         player1: "ksd_argys",
         player2: "Drticka",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 9,
         streams: []
     },
     {
@@ -132,8 +132,8 @@ const GROUP2 = [
     {
         player1: "Predator_18",
         player2: "Ciesliik",
-        score1: null,
-        score2: null,
+        score1: 12,
+        score2: 20,
         streams: []
     }
 ];
