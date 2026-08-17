@@ -21,16 +21,7 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 const matches = [
       
-    {
-        id:"predator-ciesliik",
-        player1:"Predator_18",
-        player2:"Ciesliik",date:"17. 8. 2026",time:"18:00",stream:""
-    },
-    {
-        id:"argys-drticka",
-        player1:"ksd_argys",
-        player2:"Drticka",date:"17. 8. 2026",time:"19:00",stream:"https://youtube.com/live/IJCCDwb7mKQ?feature=share"
-    },
+
     {
         id:"housle-lukyk",
         player1:"TenSHouslema",
