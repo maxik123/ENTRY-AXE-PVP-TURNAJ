@@ -176,6 +176,150 @@ const GROUP2_GRAND_FINAL = {
 };
 
 // ============================================================
+// SKUPINA 3 — WINNERS BRACKET
+// ============================================================
+
+const GROUP3 = [
+    {
+        player1: "_Lukykng",
+        player2: "MajorDTJ",
+        score1: null,
+        score2: null,
+        streams: []
+    },
+    {
+        player1: "Zelro00",
+        player2: "xmartyz",
+        score1: null,
+        score2: null,
+        streams: []
+    },
+    {
+        player1: "Fleyz",
+        player2: "Jirkoslav_CZ",
+        score1: null,
+        score2: null,
+        streams: []
+    },
+    {
+        player1: "CatboySilvestr__",
+        player2: "_Patrik420__",
+        score1: null,
+        score2: null,
+        streams: []
+    }
+];
+
+const GROUP3_WB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP3_WB_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+// ============================================================
+// SKUPINA 3 — LOSERS BRACKET
+// ============================================================
+
+const GROUP3_LB_R1 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP3_LB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP3_LB_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+const GROUP3_GRAND_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+// ============================================================
+// SKUPINA 4 — WINNERS BRACKET
+// ============================================================
+
+const GROUP4 = [
+    {
+        player1: "Troxicekk",
+        player2: "Adams297",
+        score1: null,
+        score2: null,
+        streams: []
+    },
+    {
+        player1: "Caisem",
+        player2: "Alpha_R3turns",
+        score1: null,
+        score2: null,
+        streams: []
+    },
+    {
+        player1: "Zeuxi",
+        player2: "Lionn_123",
+        score1: null,
+        score2: null,
+        streams: []
+    },
+    {
+        player1: "qHenny",
+        player2: "Adrison99",
+        score1: null,
+        score2: null,
+        streams: []
+    }
+];
+
+const GROUP4_WB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP4_WB_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+// ============================================================
+// SKUPINA 4 — LOSERS BRACKET
+// ============================================================
+
+const GROUP4_LB_R1 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP4_LB_R2 = [
+    { score1: null, score2: null, streams: [] },
+    { score1: null, score2: null, streams: [] }
+];
+
+const GROUP4_LB_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+const GROUP4_GRAND_FINAL = {
+    score1: null,
+    score2: null,
+    streams: []
+};
+
+// ============================================================
 // HELPERS
 // ============================================================
 
@@ -438,6 +582,28 @@ function render() {
         GROUP2_LB_R2,
         GROUP2_LB_FINAL,
         GROUP2_GRAND_FINAL
+    );
+
+    renderGroup(
+        "bracket-group3",
+        GROUP3,
+        GROUP3_WB_R2,
+        GROUP3_WB_FINAL,
+        GROUP3_LB_R1,
+        GROUP3_LB_R2,
+        GROUP3_LB_FINAL,
+        GROUP3_GRAND_FINAL
+    );
+
+    renderGroup(
+        "bracket-group4",
+        GROUP4,
+        GROUP4_WB_R2,
+        GROUP4_WB_FINAL,
+        GROUP4_LB_R1,
+        GROUP4_LB_R2,
+        GROUP4_LB_FINAL,
+        GROUP4_GRAND_FINAL
     );
 }
 
