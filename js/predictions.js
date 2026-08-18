@@ -20,8 +20,16 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 
 const matches = [
-      
-
+    {
+        id:"kufr-argys",
+        player1:"kufrajzcz",
+        player2:"ksd_argys",date:"19. 8. 2026",time:"17:00",stream:"https://www.youtube.com/live/IYkXhaommiM?si=uE1tl8lRt1NaXptr"
+    }, 
+    {
+        id:"flezy-jirka",
+        player1:"Fleyz",
+        player2:"Jirkoslav_CZ",date:"19. 8. 2026",time:"19:00",stream:"https://www.youtube.com/live/WLDcEYvD1jE?si=fqR8ivZXHr3HZ-eT"
+    },
     {
         id:"housle-lukyk",
         player1:"TenSHouslema",
