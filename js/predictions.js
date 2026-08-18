@@ -40,7 +40,7 @@ const matches = [
      {
         id:"xdani-zelva",
         player1:"Zelvaa",
-        player2:"xDaniCz",date:"20. 8. 2026",time:"14:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
+        player2:"xDaniCz",date:"20. 8. 2026",time:"14:00",stream:"https://youtube.com/live/wXcr9TV_6mE?feature=share"
     },
     {
         id:"housle-lukyk",
