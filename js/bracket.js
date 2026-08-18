@@ -262,8 +262,8 @@ const GROUP4 = [
     {
         player1: "Caisem",
         player2: "Alpha_R3turns",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 11,
         streams: []
     },
     {
