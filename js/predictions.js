@@ -37,6 +37,11 @@ const matches = [
         player1:"Fleyz",
         player2:"Jirkoslav_CZ",date:"19. 8. 2026",time:"19:00",stream:"https://www.youtube.com/live/WLDcEYvD1jE?si=fqR8ivZXHr3HZ-eT"
     },
+     {
+        id:"xdani-zelva",
+        player1:"Zelvaa",
+        player2:"xDaniCz",date:"20. 8. 2026",time:"14:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
+    },
     {
         id:"housle-lukyk",
         player1:"TenSHouslema",
