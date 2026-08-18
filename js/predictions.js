@@ -20,6 +20,13 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 
 const matches = [
+      
+    
+    {
+        id:"drown-troxx",
+        player1:"Troxicekk",
+        player2:"DroWnerT",date:"19. 8. 2026",time:"15:00",stream:"https://youtube.com/live/x6tBr9b1HL0?feature=share"
+    }, 
     {
         id:"kufr-argys",
         player1:"kufrajzcz",
