@@ -47,7 +47,11 @@ const matches = [
         player1:"TenSHouslema",
         player2:"Lukyk656",date:"20. 8. 2026",time:"18:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
     },
-    
+    {
+        id:"zeuxi-lion",
+        player1:"zeuxi",
+        player2:"Lionn_123",date:"20. 8. 2026",time:"19:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
+    },
 ];
 
 
