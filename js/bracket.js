@@ -72,8 +72,8 @@ const GROUP1_WB_FINAL = {
 // poražený zápasu 3 vs poražený zápasu 4
 //
 // LB R2:
-// vítěz LB R1-1 vs poražený WB semifinále 1
-// vítěz LB R1-2 vs poražený WB semifinále 2
+// poražený WB semifinále 1 vs poražený WB semifinále 2
+// vítěz LB R1-1 vs vítěz LB R1-2
 //
 // LB FINÁLE:
 // vítězové LB R2
@@ -493,8 +493,14 @@ function renderLosersBracket(matches, wbR2Data, lbR1Data, lbR2Data, lbFinalData,
     const wb1 = nextMatch(winner(matches[0]), winner(matches[1]), wbR2Data[0]);
     const wb2 = nextMatch(winner(matches[2]), winner(matches[3]), wbR2Data[1]);
 
-    const lb3 = nextMatch(winner(lb1), loser(wb1), lbR2Data[0]);
-    const lb4 = nextMatch(winner(lb2), loser(wb2), lbR2Data[1]);
+    // LB R2 je rozdělené tak, jak má být pro tento pavouk:
+    // 1) vítězové prvního kola Losers proti sobě
+    // 2) poražení semifinále Winners proti sobě
+    //
+    // Tím pádem například Kyokutan (poražený SF1)
+    // automaticky nastoupí proti poraženému ze SF2.
+    const lb3 = nextMatch(loser(wb1), loser(wb2), lbR2Data[0]);
+    const lb4 = nextMatch(winner(lb1), winner(lb2), lbR2Data[1]);
 
     const lbFinal = nextMatch(winner(lb3), winner(lb4), lbFinalData);
 
