@@ -92,8 +92,8 @@ const GROUP1_LB_R2 = [
 ];
 
 const GROUP1_LB_FINAL = {
-    score1: null,
-    score2: null,
+    score1: 19,
+    score2: 20,
     streams: []
 };
 
