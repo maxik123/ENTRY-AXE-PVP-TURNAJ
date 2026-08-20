@@ -254,9 +254,9 @@ const GROUP3_GRAND_FINAL = {
 const GROUP4 = [
     {
         player1: "Troxicekk",
-        player2: "Adams297",
-        score1: null,
-        score2: null,
+        player2: "DroWnerT",
+        score1: 20,
+        score2: 7,
         streams: []
     },
     {
