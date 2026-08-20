@@ -55,7 +55,7 @@ const GROUP1 = [
 
 const GROUP1_WB_R2 = [
     { score1: 20, score2: 10, streams: [] },
-    { score1: null, score2: null, streams: [] }
+    { score1: 19, score2: 20, streams: [] }
 ];
 
 const GROUP1_WB_FINAL = {
@@ -269,8 +269,8 @@ const GROUP4 = [
     {
         player1: "Zeuxi",
         player2: "Lionn_123",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 12,
         streams: []
     },
     {
