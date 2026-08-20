@@ -139,7 +139,7 @@ const GROUP2 = [
 ];
 
 const GROUP2_WB_R2 = [
-    { score1: null, score2: null, streams: [] },
+    { score1: 20, score2: 2, streams: [] },
     { score1: null, score2: null, streams: [] }
 ];
 
@@ -197,8 +197,8 @@ const GROUP3 = [
     {
         player1: "Fleyz",
         player2: "Jirkoslav_CZ",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 6,
         streams: []
     },
     {
