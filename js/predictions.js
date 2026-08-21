@@ -21,37 +21,16 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 const matches = [
       
-    
     {
-        id:"drown-troxx",
-        player1:"Troxicekk",
-        player2:"DroWnerT",date:"19. 8. 2026",time:"15:00",stream:"https://youtube.com/live/x6tBr9b1HL0?feature=share"
+        id:"drtic-tom",
+        player1:"Drticka",
+        player2:"Tomas123456",date:"21. 8. 2026",time:"17:00",stream:"https://youtube.com/live/b421-L1CGBY?feature=share"
+    },     
+    {
+        id:"miner-zelva",
+        player1:"MINER99",
+        player2:"Zelvaa",date:"21. 8. 2026",time:"18:00",stream:"https://youtube.com/live/8qoKPAifO08?feature=share"
     }, 
-    {
-        id:"kufr-argys",
-        player1:"kufrajzcz",
-        player2:"ksd_argys",date:"19. 8. 2026",time:"17:00",stream:"https://www.youtube.com/live/IYkXhaommiM?si=uE1tl8lRt1NaXptr"
-    }, 
-    {
-        id:"flezy-jirka",
-        player1:"Fleyz",
-        player2:"Jirkoslav_CZ",date:"19. 8. 2026",time:"19:00",stream:"https://www.youtube.com/live/WLDcEYvD1jE?si=fqR8ivZXHr3HZ-eT"
-    },
-     {
-        id:"xdani-zelva",
-        player1:"Zelvaa",
-        player2:"xDaniCz",date:"20. 8. 2026",time:"14:00",stream:"https://youtube.com/live/wXcr9TV_6mE?feature=share"
-    },
-    {
-        id:"housle-lukyk",
-        player1:"TenSHouslema",
-        player2:"Lukyk656",date:"20. 8. 2026",time:"18:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
-    },
-    {
-        id:"zeuxi-lion",
-        player1:"zeuxi",
-        player2:"Lionn_123",date:"20. 8. 2026",time:"19:00",stream:"https://youtube.com/live/g5JtpEbwa8E?feature=share"
-    },
 ];
 
 
