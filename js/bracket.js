@@ -125,8 +125,8 @@ const GROUP2 = [
     {
         player1: "TenSHouslema",
         player2: "Lukyk656",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 9,
         streams: []
     },
     {
