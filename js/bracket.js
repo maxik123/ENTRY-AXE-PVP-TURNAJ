@@ -59,8 +59,8 @@ const GROUP1_WB_R2 = [
 ];
 
 const GROUP1_WB_FINAL = {
-    score1: null,
-    score2: null,
+    score1: 20,
+    score2: 2,
     streams: []
 };
 
