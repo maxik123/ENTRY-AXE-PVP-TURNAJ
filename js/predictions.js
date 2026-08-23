@@ -22,15 +22,15 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 const matches = [
       
     {
-        id:"drtic-tom",
-        player1:"Drticka",
-        player2:"Tomas123456",date:"21. 8. 2026",time:"17:00",stream:"https://youtube.com/live/b421-L1CGBY?feature=share"
+        id:"caisem-trox",
+        player1:"Troxicekk",
+        player2:"caisem",date:"24. 8. 2026",time:"15:00",stream:""
     },     
     {
-        id:"miner-zelva",
-        player1:"MINER99",
-        player2:"Zelvaa",date:"21. 8. 2026",time:"18:00",stream:"https://youtube.com/live/8qoKPAifO08?feature=share"
-    }, 
+        id:"qhenny-adrison",
+        player1:"Adrison99",
+        player2:"qHenny",date:"25. 8. 2026",time:"19:00",stream:""
+    },     
 ];
 
 
