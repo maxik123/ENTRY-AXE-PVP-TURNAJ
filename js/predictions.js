@@ -20,11 +20,15 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 
 const matches = [
-      
+    {
+        id:"wbot-nojmisek",
+        player1:"WBotWarrior7",
+        player2:"Nojmisek",date:"25. 8. 2026",time:"13:00",stream:""
+    },     
     {
         id:"caisem-trox",
         player1:"Troxicekk",
-        player2:"caisem",date:"24. 8. 2026",time:"15:00",stream:""
+        player2:"caisem",date:"25. 8. 2026",time:"15:00",stream:""
     },     
     {
         id:"qhenny-adrison",
