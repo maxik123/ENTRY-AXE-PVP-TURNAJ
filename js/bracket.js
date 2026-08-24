@@ -83,11 +83,11 @@ const GROUP1_WB_FINAL = {
 
 const GROUP1_LB_R1 = [
     { score1: 7, score2: 20, streams: [] },
-    { score1: 20, score2: 0, streams: [] }
+    { score1: null, score2: null, streams: [] }
 ];
 
 const GROUP1_LB_R2 = [
-    { score1: null, score2: null, streams: [] },
+    { score1: 20, score2: 0, streams: [] },
     { score1: null, score2: null, streams: [] }
 ];
 
