@@ -35,6 +35,11 @@ const matches = [
         player1:"Adrison99",
         player2:"qHenny",date:"25. 8. 2026",time:"19:00",stream:""
     },     
+     {
+        id:"housle-cieslik",
+        player1:"TenSHouslema",
+        player2:"Ciesliik",date:"27. 8. 2026",time:"18:00",stream:""
+    },   
 ];
 
 
