@@ -20,25 +20,26 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 
 const matches = [
-    {
-        id:"wbot-nojmisek",
-        player1:"WBotWarrior7",
-        player2:"Nojmisek",date:"25. 8. 2026",time:"13:00",stream:""
-    },     
+   
     {
         id:"caisem-trox",
         player1:"Troxicekk",
-        player2:"caisem",date:"25. 8. 2026",time:"15:00",stream:""
+        player2:"caisem",date:"?. ?. 2026",time:"?",stream:""
     },     
     {
         id:"qhenny-adrison",
         player1:"Adrison99",
-        player2:"qHenny",date:"25. 8. 2026",time:"19:00",stream:""
+        player2:"qHenny",date:"?. ?. 2026",time:"?",stream:""
     },     
      {
         id:"housle-cieslik",
         player1:"TenSHouslema",
         player2:"Ciesliik",date:"27. 8. 2026",time:"18:00",stream:""
+    },   
+    {
+        id:"patrk-silv",
+        player1:"_Patrik420_",
+        player2:"CatboySilvestr__",date:"27. 8. 2026",time:"20:00",stream:""
     },   
 ];
 
