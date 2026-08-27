@@ -154,7 +154,7 @@ const GROUP2_WB_FINAL = {
 // ============================================================
 
 const GROUP2_LB_R1 = [
-    { score1: null, score2: null, streams: [] },
+    { score1: 17, score2: 20, streams: [] },
     { score1: null, score2: null, streams: [] }
 ];
 
