@@ -140,7 +140,7 @@ const GROUP2 = [
 
 const GROUP2_WB_R2 = [
     { score1: 20, score2: 2, streams: [] },
-    { score1: null, score2: null, streams: [] }
+    { score1: 20, score2: 15, streams: [] }
 ];
 
 const GROUP2_WB_FINAL = {
