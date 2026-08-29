@@ -20,7 +20,11 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 
 const matches = [
-   
+    {
+        id:"silvestr-fleyz",
+        player1:"Fleyz",
+        player2:"catboySilvestr__",date:"29. 8. 2026",time:"21:00",stream:""
+    },   
     {
         id:"caisem-trox",
         player1:"Troxicekk",
@@ -36,11 +40,7 @@ const matches = [
         player1:"TenSHouslema",
         player2:"Ciesliik",date:"27. 8. 2026",time:"18:00",stream:""
     },   
-    {
-        id:"patrk-silv",
-        player1:"_Patrik420_",
-        player2:"CatboySilvestr__",date:"27. 8. 2026",time:"20:00",stream:""
-    },   
+ 
 ];
 
 
