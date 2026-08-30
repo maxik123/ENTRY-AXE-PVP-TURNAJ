@@ -136,8 +136,8 @@ const GROUP1_LB_R1 = [
 
 const GROUP1_LB_R2 = [
     {
-        score1: 20,
-        score2: 0,
+        score1: null,
+        score2: null,
         streams: []
     },
     {
