@@ -283,7 +283,7 @@ const GROUP4 = [
 ];
 
 const GROUP4_WB_R2 = [
-    { score1: null, score2: null, streams: [] },
+    { score1: 20, score2: 7, streams: [] },
     { score1: null, score2: null, streams: [] }
 ];
 
