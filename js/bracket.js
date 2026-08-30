@@ -276,8 +276,8 @@ const GROUP4 = [
     {
         player1: "qHenny",
         player2: "Adrison99",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 14,
         streams: []
     }
 ];
