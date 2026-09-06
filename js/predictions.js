@@ -48,7 +48,7 @@ const matches = [
      {
         id:"drown-retr",
         player1:"Alpha_R3turns",
-        player2:"DroWnerT",date:"?. ?. 2026",time:"?",stream:""
+        player2:"DroWnerT",date:"6. 9. 2026",time:"19:00",stream:""
     },   
         {
         id:"lionn-adrison",
