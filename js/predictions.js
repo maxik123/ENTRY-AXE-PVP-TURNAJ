@@ -20,41 +20,25 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 
 
 const matches = [
+    
     {
         id:"sajk-kyokutan",
         player1:"Sajk3000",
         player2:"Kyokutan_",date:"?. ?. 2026",time:"?",stream:""
     },   
-    {
-        id:"wbot-xdani",
-        player1:"xDaniCz",
-        player2:"WBotWarrior7",date:"?. ?. 2026",time:"?",stream:""
-    },   
+ 
     {
         id:"lukyk-predator",
         player1:"Lukyk656",
         player2:"Predator_18",date:"?. ?. 2026",time:"?",stream:""
     },   
-    {
-        id:"drticka-argys",
-        player1:"ksd_argys",
-        player2:"Drticka",date:"?. ?. 2026",time:"?",stream:""
-    },   
-    {
-        id:"zeuxi-qhenny",
-        player1:"qHenny",
-        player2:"zeuxi",date:"?. ?. 2026",time:"?",stream:""
-    },   
+
      {
         id:"drown-retr",
         player1:"Alpha_R3turns",
         player2:"DroWnerT",date:"6. 9. 2026",time:"19:00",stream:""
     },   
-        {
-        id:"lionn-adrison",
-        player1:"Adrison99",
-        player2:"Lionn_123",date:"?. ?. 2026",time:"?",stream:""
-    },   
+ 
     
 ];
 
