@@ -442,8 +442,8 @@ const GROUP4_WB_FINAL = {
 
 const GROUP4_LB_R1 = [
     {
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 0,
         streams: []
     },
     {
