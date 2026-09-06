@@ -22,6 +22,11 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 const matches = [
     
     {
+        id:"housle-kufr",
+        player1:"kufrajzcz",
+        player2:"TenSHouslema",date:"7. 9. 2026",time:"19:00",stream:""
+    },   
+    {
         id:"sajk-kyokutan",
         player1:"Sajk3000",
         player2:"Kyokutan_",date:"?. ?. 2026",time:"?",stream:""
