@@ -157,8 +157,8 @@ const GROUP1_LB_MID_FINAL = {
 // LB FINÁLE
 // Vítěz LB mezifinále vs poražený WB finále
 const GROUP1_LB_FINAL = {
-    score1: 19,
-    score2: 20,
+    score1: null,
+    score2: null,
     streams: []
 };
 
