@@ -27,11 +27,6 @@ const matches = [
         player2:"DroWnerT",date:"?. 9. 2026",time:"00:00",stream:""
     }, 
     {
-        id:"martyz-zeiro",
-        player1:"Ze1ro00",
-        player2:"xmartyz",date:"9. 9. 2026",time:"19:00",stream:""
-    }, 
-    {
         id:"housle-kufr",
         player1:"kufrajzcz",
         player2:"TenSHouslema",date:"7. 9. 2026",time:"19:00",stream:""
