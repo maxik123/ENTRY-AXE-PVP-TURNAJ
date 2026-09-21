@@ -235,8 +235,8 @@ const GROUP2_LB_R1 = [
         streams: []
     },
     {
-        score1: null,
-        score2: null,
+        score1: 7,
+        score2: 20,
         streams: []
     }
 ];
@@ -290,8 +290,8 @@ const GROUP3 = [
     {
         player1: "Zelro00",
         player2: "xmartyz",
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 3,
         streams: []
     },
     {
@@ -423,8 +423,8 @@ const GROUP4_WB_R2 = [
         streams: []
     },
     {
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 14,
         streams: []
     }
 ];
@@ -447,8 +447,8 @@ const GROUP4_LB_R1 = [
         streams: []
     },
     {
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 10,
         streams: []
     }
 ];
