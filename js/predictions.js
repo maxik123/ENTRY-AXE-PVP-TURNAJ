@@ -22,14 +22,14 @@ from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
 const matches = [
     
     {
-        id:"drown-caisem",
-        player1:"caisem",
-        player2:"DroWnerT",date:"?. 9. 2026",time:"00:00",stream:""
+        id:"zeuxi-troxicekk",
+        player1:"Troxicekk",
+        player2:"zeuxi",date:"9. 10. 2026",time:"19:00",stream:""
     }, 
     {
         id:"housle-kufr",
         player1:"kufrajzcz",
-        player2:"TenSHouslema",date:"7. 9. 2026",time:"19:00",stream:""
+        player2:"TenSHouslema",date:"10. 10. 2026",time:"19:00",stream:""
     },   
     {
         id:"sajk-kyokutan",
@@ -38,8 +38,8 @@ const matches = [
     },   
  
     {
-        id:"lukyk-predator",
-        player1:"Lukyk656",
+        id:"ciesliik-predatorr2",
+        player1:"Ciesliik",
         player2:"Predator_18",date:"?. ?. 2026",time:"?",stream:""
     },   
 
