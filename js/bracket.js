@@ -218,8 +218,8 @@ const GROUP2_WB_R2 = [
 ];
 
 const GROUP2_WB_FINAL = {
-    score1: null,
-    score2: null,
+    score1: 20,
+    score2: 0,
     streams: []
 };
 
@@ -256,8 +256,8 @@ const GROUP2_LB_R2 = [
 
 // NOVÝ MEZIKROK
 const GROUP2_LB_MID_FINAL = {
-    score1: null,
-    score2: null,
+    score1: 20,
+    score2: 0,
     streams: []
 };
 
