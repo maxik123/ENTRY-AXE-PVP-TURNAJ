@@ -312,8 +312,8 @@ const GROUP3 = [
 
 const GROUP3_WB_R2 = [
     {
-        score1: null,
-        score2: null,
+        score1: 0,
+        score2: 20,
         streams: []
     },
     {
@@ -336,13 +336,13 @@ const GROUP3_WB_FINAL = {
 
 const GROUP3_LB_R1 = [
     {
-        score1: null,
-        score2: null,
+        score1: 0,
+        score2: 20,
         streams: []
     },
     {
-        score1: null,
-        score2: null,
+        score1: 20,
+        score2: 0,
         streams: []
     }
 ];
