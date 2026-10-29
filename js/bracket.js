@@ -263,8 +263,8 @@ const GROUP2_LB_MID_FINAL = {
 
 // LB FINÁLE
 const GROUP2_LB_FINAL = {
-    score1: null,
-    score2: null,
+    score1: 20,
+    score2: 10,
     streams: []
 };
 
